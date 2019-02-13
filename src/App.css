@@ -7,10 +7,13 @@ h1 {
   font-family: Sacramento;
   font-size: 76px;
   padding: 10px;
+  margin-bottom: 5px;
   color: #E8DB7D;
 }
 
 h2 {
-  color: #E8DB7D;
-  
+  color: #558C8C;
+  letter-spacing: 2px;
+  font-size: 32px;
+  margin: 0;
 }
