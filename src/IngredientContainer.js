@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Ingredient from './Ingredient.js'
 
 // Ingredient selection at start
 export default class Ingredients extends Component {
@@ -10,11 +11,21 @@ export default class Ingredients extends Component {
     console.log("ingContainer props", this.state.categories)
   }
   render() {
+
+
     return (
       <div>
         {
           this.state.categories.map(category => {
-            return <h3>{category}</h3>
+            return (
+                <div>
+                  <h3>{category}</h3>,
+                  { this.props.ingredients[category].map(ingredient => {
+                    return <Ingredient ingredient={ingredient}/>
+                  }) }
+                </div>
+                )
+
           })
         }
       </div>

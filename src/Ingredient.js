@@ -1,7 +1,8 @@
 import React from 'react';
+import IngredientContainer from './IngredientContainer.js'
 
-export default function Ingredient() {
+export default function Ingredient(props) {
   return ( 
-    // Individual ingredients to select on start up
+    <h4>Hello {props.ingredient}</h4>
   )
 }

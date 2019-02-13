@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export class Smoothie extends Component {
+export default class Smoothie extends Component {
   constructor(props) {
     super(props)
   }
@@ -13,5 +13,3 @@ export class Smoothie extends Component {
     )
   }
 }
-
-export default Smoothie
