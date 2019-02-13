@@ -6,7 +6,6 @@ export default function SmoothieContainer(props) {
     <ul>
       {
       props.smoothies.map(smoothie => {
-        console.log(smoothie.name)
         return <Smoothie name={smoothie.name}
                          img={smoothie.img}/>
       })
