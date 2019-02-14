@@ -684,6 +684,14 @@ const smoothies = [{
   "id": 31,
   "name": "Cookies and Cream Smoothie",
   "ingredients": [
+    "banana",
+    "yogurt",
+    "vanilla extract",
+    "milk",
+    "chocolate sandwich cookies",
+    "whipped cream"
+  ],
+  "recipe": [
     "1/2 frozen banana",
     "1 cup vanilla yogurt or plain yogurt",
     "1 teaspoon vanilla extract",
@@ -699,6 +707,13 @@ const smoothies = [{
   "id": 32,
   "name": "Anti-Bloat Smoothie",
   "ingredients": [
+    "coconut water",
+    "banana",
+    "cucumber",
+    "ginger",
+    "ice"
+  ],
+  "recipe": [
     "1/2 cup coconut water",
     "1 banana",
     "1 large cucumber, sliced",
@@ -707,12 +722,20 @@ const smoothies = [{
   ],
   "servings": 1,
   "source": "https://happyhealthymama.com/the-anti-bloat-smoothie.html#_a5y_p=4123702",
-  "img": "images/antibloat.png"
+  "img": "/images/antibloat.png"
 },
 {
   "id": 33,
   "name": "Healthy Apple Pie Smoothie",
   "ingredients": [
+    "yogurt",
+    "apple",
+    "milk",
+    "honey",
+    "ice",
+    "cinnamon"
+  ],
+  "recipe": [
     "6 oz vanilla yogurt",
     "1 apple chopped",
     "1/2 cup milk",
@@ -722,12 +745,19 @@ const smoothies = [{
   ],
   "servings": 2,
   "source": "https://www.familyfreshmeals.com/2015/08/healthy-apple-pie-smoothie.html",
-  "img": "images/apple-pie.png"
+  "img": "/images/apple-pie.png"
 },
 {
   "id": 34,
   "name": "Healthy Pina Colada Smoothie",
   "ingredients": [
+    "banana",
+    "pineapple",
+    "pineapple",
+    "coconut milk",
+    "ice"
+  ],
+  "recipe": [
     "1/2 frozen banana",
     "1/2 cup frozen pineapple chunks",
     "1/3 cup pineapple or pina colada juice",
@@ -736,12 +766,19 @@ const smoothies = [{
   ],
   "servings": 1,
   "source": "https://gatherforbread.com/easy-5-minute-pina-colada-smoothie/",
-  "img": "images/pina-colada.png"
+  "img": "/images/pina-colada.png"
 },
 {
   "id": 35,
   "name": "Raspberry Apple Smoothie with Bananas",
   "ingredients": [
+    "coconut water",
+    "bananas",
+    "apple",
+    "raspberries",
+    "ice"
+  ],
+  "recipe": [
     "1/2 cup coconut water",
     "2 medium-sized bananas",
     "2 cups apple, sliced, (1 large apple)",
@@ -750,12 +787,19 @@ const smoothies = [{
   ],
   "servings": 2,
   "source": "https://www.jessicagavin.com/raspberry-apple-smoothie-bananas/",
-  "img": "images/rasp-apple.png"
+  "img": "/images/rasp-apple.png"
 },
 {
   "id": 36,
   "name": "Cherry Smoothie",
   "ingredients": [
+    "juice",
+    "banana",
+    "cherries",
+    "yogurt",
+    "cherries"
+  ],
+  "recipe": [
     "1 1/2 cups juice cherry juice, cran-cherry juice, apple juice or white grape juice",
     " 1 banana cut in half",
     "1 1/2 cups frozen dark sweet cherries",
@@ -764,12 +808,18 @@ const smoothies = [{
   ],
   "servings": 2,
   "source": "https://www.dinneratthezoo.com/cherry-smoothie/",
-  "img": "images/cherry.png"
+  "img": "/images/cherry.png"
 },
 {
   "id": 37,
   "name": "Pomegranate Smoothie",
   "ingredients": [
+    "pomegranate juice",
+    "coconut milk",
+    "banana",
+    "blueberries"
+  ],
+  "recipe": [
     "1 cup pomegranate juice",
     "½ cup coconut milk",
     "1 medium banana",
@@ -777,12 +827,18 @@ const smoothies = [{
   ],
   "servings": 3,
   "source": "https://realfoodrealdeals.com/pomegranate-smoothie/",
-  "img": "images/pomegranate.png"
+  "img": "/images/pomegranate.png"
 },
 {
   "id": 38,
   "name": "Mango Vanilla Smoothie",
   "ingredients": [
+    "mango",
+    "yogurt",
+    "milk",
+    "vanilla extract"
+  ],
+  "recipe": [
     "1 cup frozen mango chunks",
     "1/4 cup 2 ounces plain Greek yogurt",
     "1/4 cup vanilla soymilk",
@@ -790,12 +846,21 @@ const smoothies = [{
   ],
   "servings": 1,
   "source": "https://gatherforbread.com/mango-vanilla-smoothie/",
-  "img": "images/mango-vanilla.png"
+  "img": "/images/mango-vanilla.png"
 },
 {
   "id": 39,
   "name": "Vegan Oat Smoothie",
   "ingredients": [
+    "milk",
+    "almond butter",
+    "banana",
+    "protein powder",
+    "oats",
+    "cinnamon",
+    "sea salt"
+  ],
+  "recipe": [
     "1 cup almond milk",
     "1 tbsp almond butter",
     "1 frozen banana",
@@ -806,12 +871,23 @@ const smoothies = [{
   ],
   "servings": 1,
   "source": "https://www.leahsplate.com/vanilla-oat-protein-smoothie/",
-  "img": "images/vanilla-oat.png"
+  "img": "/images/vanilla-oat.png"
 },
 {
   "id": 40,
   "name": "Ultra Dreamy Mint Chocolate Chip Smoothie",
   "ingredients": [
+    "yogurt",
+    "coconut milk",
+    "spinach",
+    "ice",
+    "banana",
+    "1 tablespoon plain whey protein",
+    "peppermint extract",
+    "honey (optional)",
+    "1chocolate chips"
+  ],
+  "recipe": [
     "¼ cup plain yogurt",
     "¼ cup coconut milk (canned)",
     "1 cup frozen spinach (or 3-4 cups fresh)",
@@ -824,7 +900,7 @@ const smoothies = [{
   ],
   "servings": 1,
   "source": "https://sunkissedkitchen.com/green-spinach-mint-chocolate-chip-smoothie/",
-  "img": "images/choc-mint.png"
+  "img": "/images/choc-mint.png"
 }
 ]
 
