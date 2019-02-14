@@ -12,7 +12,8 @@ class App extends Component {
       smoothies: smoothies,
       ingredients: ingredients,
       error: '',
-      chosenIngredients: []
+      chosenIngredients: [],
+      // filteredSmoothies: smoothies
     }
   }
 
@@ -46,13 +47,23 @@ class App extends Component {
   chooseIngredients = (ingredient) => {
     const updatedIngredients = [ ...this.state.chosenIngredients, ingredient]
     this.setState({chosenIngredients: updatedIngredients})
+    this.filterSmoothies();
   }
 
   removeIngredient = (ingredient) => {
     const updatedIngredients = this.state.chosenIngredients.filter(chosenIngredient => {
       return chosenIngredient !== ingredient
     })
+    this.filterSmoothies();
     this.setState({chosenIngredients: updatedIngredients})
+  }
+
+  filterSmoothies = () => {
+    this.state.chosenIngredients.forEach(ingredient => {
+      this.state.smoothies = smoothies.filter(smoothie => {
+        return smoothie.ingredients.includes(ingredient)
+      })
+    })
   }
 
   render() {
@@ -66,7 +77,10 @@ class App extends Component {
           chooseIngredients={this.chooseIngredients}
           removeIngredient={this.removeIngredient}
         />
-        <SmoothieContainer smoothies={this.state.smoothies}/>
+        <SmoothieContainer 
+          smoothies={this.state.smoothies}
+          // filteredSmoothies={this.state.filteredSmoothies}
+        />
       </div>
     );
   }

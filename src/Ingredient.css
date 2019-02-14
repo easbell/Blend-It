@@ -1,0 +1,12 @@
+.selected {
+  background-color: #E8DB7D;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.not-selected {
+  padding: 10px;
+  cursor: pointer;
+
+}
