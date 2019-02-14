@@ -2,6 +2,16 @@ const smoothies = [{
   "id": 1,
   "name": "Babe Ruth Strawberry Pineapple Banana Smoothie",
   "ingredients": [
+    "strawberries",
+    "pineapple",
+    "banana",
+    "orange juice",
+    "yogurt",
+    "spinach",
+    "chia seeds",
+    "flaxseed"
+  ],
+  "recipe": [
     "1 cup strawberries",
     "1/2 cup pineapple",
     "1 banana",
@@ -19,6 +29,15 @@ const smoothies = [{
   "id": 2,
   "name": "Cherry Almond Smoothie",
   "ingredients": [
+    "milk",
+    "cherries",
+    "raw almonds",
+    "honey",
+    "cinnamon",
+    "almond extract",
+    "coconut oil"
+  ],
+  "recipe": [
     "1 cup almond milk",
     "1 cup cherries",
     "3 tablespoons raw almonds",
@@ -35,6 +54,13 @@ const smoothies = [{
   "id": 3,
   "name": "Lovely Greens Smoothie",
   "ingredients": [
+    "pineapple",
+    "spinach",
+    "grapes",
+    "orange juice",
+    "banana"
+  ],
+  "recipe": [
     "1 cup pineapple",
     "2 cups spinach",
     "1/2 cup grapes",
@@ -50,6 +76,16 @@ const smoothies = [{
   "id": 4,
   "name": "Blueberry Cacao Power Smoothie",
   "ingredients": [
+    "blueberries",
+    "milk",
+    "cacao powder",
+    "chia seeds",
+    "dates",
+    "power greens mix",
+    "maple syrup",
+    "stevia"
+  ],
+  "recipe": [
     "3/4 cup frozen blueberries",
     "3/4 cup almond milk",
     "2 tablespoons raw cacao powder",
@@ -66,6 +102,16 @@ const smoothies = [{
   "id": 5,
   "name": "Youthful Glow Green Smoothie",
   "ingredients": [
+    "kale",
+    "power greens mix",
+    "spinach",
+    "apple juice",
+    "cucumber",
+    "lemon",
+    "banana",
+    "ginger"
+  ],
+  "recipe": [
     "2 cups kale or power greens mix",
     "2 cups baby spinach",
     "2 cups apple juice",
@@ -83,6 +129,14 @@ const smoothies = [{
   "id": 6,
   "name": "Peach Mango Smoothie",
   "ingredients": [
+    "peaches",
+    "mango",
+    "mango nectar",
+    "banana",
+    "sugar",
+    "honey"
+  ],
+  "recipe": [
     "1 cup peaches",
     "1/2 cup mangoes",
     "1/4 cup mango nectar",
@@ -98,6 +152,16 @@ const smoothies = [{
   "id": 7,
   "name": "Mango, Berry & Banana Smoothie",
   "ingredients": [
+    "banana",
+    "dates",
+    "mango",
+    "coconut water",
+    "blackberries",
+    "blueberries",
+    "yogurt",
+    "flaxseed"
+  ],
+  "recipe": [
     "1 very ripe peeled banana (preferably frozen)",
     "2 Medjool dates, pitted",
     "1 cup frozen mango chunks",
@@ -114,6 +178,12 @@ const smoothies = [{
   "id": 8,
   "name": "Banana Almond Smoothie",
   "ingredients": [
+    "banana",
+    "milk",
+    "almond butter",
+    "almond extract"
+  ],
+  "recipe": [
     "1 frozen banana, broken into 3–4 chunks",
     "1 cup almond milk",
     "1 tablespoon almond butter",
@@ -127,13 +197,22 @@ const smoothies = [{
   "id": 9,
   "name": "Blackberry and Yogurt Breakfast Smoothie",
   "ingredients": [
+    "banana",
+    "spinach",
+    "yogurt",
+    "orange juice",
+    "ginger",
+    "honey",
+    "agave nectar"
+  ],
+  "recipe": [
     "1 banana",
     "2 cups (packed) spinach leaves",
     "1 cup frozen blackberries",
     "1 cup nonfat yogurt",
     "1/2 cup fresh orange juice",
     "1 teaspoon finely grated peeled ginger",
-    "1 teaspoon honey or light agave syrup (nectar)"
+    "1 teaspoon honey or agave nectar"
   ],
   "servings": 1,
   "source": "https://www.bonappetit.com/recipe/blackberry-and-yogurt-breakfast-smoothie",
@@ -143,6 +222,17 @@ const smoothies = [{
   "id": 10,
   "name": "Avocado, Kale, Pineapple, and Coconut Smoothie",
   "ingredients": [
+    "avocado",
+    "kale",
+    "spinach",
+    "pineapple",
+    "coconut meat",
+    "coconut water",
+    "lemon",
+    "matcha",
+    "agave nectar"
+  ],
+  "recipe": [
     "½ ripe avocado, pitted, peeled",
     "½ cup coarsely chopped kale or spinach",
     "½ cup frozen pineapple chunks",
@@ -161,6 +251,15 @@ const smoothies = [{
   "id": 11,
   "name": "Tropical Carrot, Ginger, and Turmeric Smoothie",
   "ingredients": [
+    "orange",
+    "carrot",
+    "coconut water",
+    "mango",
+    "hemp seeds",
+    "ginger",
+    "turmeric"
+  ],
+  "recipe": [
     "1 blood or navel orange, peel and white pith removed",
     "1 large carrot, scrubbed, coarsely chopped",
     "½ cup frozen mango chunks",
@@ -179,6 +278,12 @@ const smoothies = [{
   "id": 12,
   "name": "Strawberry Banana Smoothie",
   "ingredients": [
+    "strawberries",
+    "banana",
+    "yogurt",
+    "milk"
+  ],
+  "recipe": [
     "2 cups fresh strawberries, halved",
     "1 banana, quartered and frozen",
     "1/2 cup Greek yogurt",
@@ -192,6 +297,13 @@ const smoothies = [{
   "id": 13,
   "name": "Blackberry Coconut Fruit Smoothie",
   "ingredients": [
+    "milk",
+    "blackberries",
+    "banana",
+    "coconut flakes",
+    "protein powder"
+  ],
+  "recipe": [
     "1 cup unsweetened coconut milk",
     "1/2 cup blackberries, fesh or frozen",
     "1/2 banana",
@@ -206,6 +318,12 @@ const smoothies = [{
   "id": 14,
   "name": "Tropical Chia Fruit Smoothie",
   "ingredients": [
+    "milk",
+    "mango",
+    "pineapple",
+    "protein powder"
+  ],
+  "recipe": [
     "1 cup unsweetened almond milk",
     "½ cup mango, fresh or frozen",
     "½ cup pineapple chunks, fresh or frozen",
@@ -219,6 +337,14 @@ const smoothies = [{
   "id": 15,
   "name": "The Best Green Protein Fruit Smoothie",
   "ingredients": [
+    "milk",
+    "spinach",
+    "banana",
+    "pear",
+    "almond butter",
+    "protein powder"
+  ],
+  "recipe": [
     "1 cup unsweetened almond milk",
     "1 cup baby spinach, packed",
     "1/2 banana",
@@ -234,6 +360,13 @@ const smoothies = [{
   "id": 16,
   "name": "Tropical Smoothie Recipe",
   "ingredients": [
+    "pineapple juice",
+    "coconut milk",
+    "banana",
+    "mango",
+    "pineapple"
+  ],
+  "recipe": [
     "3/4 cup of pineapple juice",
     "1/2 cup of canned coconut milk light is ok",
     "1 large banana fresh or sliced then frozen",
@@ -248,9 +381,17 @@ const smoothies = [{
   "id": 17,
   "name": "The Best Breakfast Smoothie",
   "ingredients": [
+    "banana",
+    "strawberries",
+    "rolled oats",
+    "protein powder",
+    "peanut butter"
+    "milk"
+  ],
+  "recipe": [
     "1 banana, frozen",
     "1 cup strawberries, frozen",
-    "2 tablespoons rolled oatmeal",
+    "2 tablespoons rolled oats",
     "¼ cup protein powder",
     "1 tablespoon peanut butter, creamy",
     "1 cup almond milk"
@@ -263,6 +404,12 @@ const smoothies = [{
   "id": 18,
   "name": "Aloha Pineapple Smoothie",
   "ingredients": [
+    "banana",
+    "strawberries",
+    "pineapple",
+    "yogurt"
+  ],
+  "recipe": [
     "1/2 banana, sliced",
     "1/2 cup strawberries, sliced",
     "1/2 cup fresh pineapple, diced",
@@ -277,6 +424,13 @@ const smoothies = [{
   "id": 19,
   "name": "Immunity Boosting Triple Berry Kiwi Smoothie",
   "ingredients": [
+    "strawberries",
+    "raspberries",
+    "blueberries",
+    "kiwi",
+    "orange juice"
+  ],
+  "recipe": [
     "1 cup frozen strawberries",
     "3/4 cup frozen raspberries",
     "1/2 cup frozen blueberries",
@@ -670,6 +824,7 @@ const ingredients = {
     "whey protein",
     "chocolate sandwich cookies",
     "peppermint extract",
+    "coconut meat"
   ]
 }
 
