@@ -3,6 +3,8 @@ import IngredientContainer from './IngredientContainer.js'
 
 export default function Ingredient(props) {
   return ( 
-    <h4>Hello {props.ingredient}</h4>
+    <h4>
+    {props.ingredient}
+    </h4>
   )
 }

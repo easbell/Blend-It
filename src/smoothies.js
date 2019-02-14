@@ -290,7 +290,13 @@ const smoothies = [{
 {
   "id": 20,
   "name": "Detox Green Smoothie with Chia Seeds",
-  "ingredients": [
+  "ingredients":[
+  "spinach",
+  "pineapple",
+  "chia seeds",
+  "milk"
+  ],
+  "recipe":[
     "1 cup spinach leaves",
     "1 banana, cut into pieces",
     "1 cup frozen pineapple chunks",
@@ -304,7 +310,13 @@ const smoothies = [{
 {
   "id": 21,
   "name": "Orange Creamsicle Smoothie",
-  "ingredients": [
+  "ingredients":[
+  "milk",
+  "orange",
+  "yogurt",
+  "lemon"
+  ],
+  "recipe":[
     "1 cup your favorite type of milk",
     "3/4 cup chopped baby carrots",
     "5 clementine mandarin oranges peeled and separated",
@@ -318,7 +330,14 @@ const smoothies = [{
 {
   "id": 22,
   "name": "Chocolate Peanut Butter Banana Smoothie",
-  "ingredients": [
+  "ingredients":[
+  "peanut butter",
+  "banana",
+  "yogurt",
+  "cocoa powder",
+  "ice"
+  ],
+  "recipe":[
     "1/8 cup creamy peanut butter",
     "1 banana (frozen is best if you have it)",
     "1/4 cup milk (add another 1/4 cup if you have a lower powered blender)",
@@ -333,7 +352,14 @@ const smoothies = [{
 {
   "id": 23,
   "name": "Glowing Green Spirulina Smoothie",
-  "ingredients": [
+  "ingredients":[
+  "banana",
+  "blueberries",
+  "kale",
+  "milk",
+  "spirulina powder"
+  ],
+  "recipe":[
     "1 banana, frozen",
     "1/4 cup blueberries, frozen",
     "1 cup kale",
@@ -347,7 +373,12 @@ const smoothies = [{
 {
   "id": 24,
   "name": "Cherry Mango Anti-Inflammatory Smoothie",
-  "ingredients": [
+  "ingredients":[
+  "mango",
+  "cherries",
+  "water"
+  ],
+  "recipe":[
     "1 cup mango, frozen",
     "1 cup sweet cherries, frozen",
     "1 1/4 cup water"
@@ -359,7 +390,17 @@ const smoothies = [{
 {
   "id": 25,
   "name": "Berry, Beet, Mint, Lime, and Chia Seed Smoothie",
-  "ingredients": [
+  "ingredients":[
+  "milk",
+  "blackberries",
+  "blueberries",
+  "mint leaves",
+  "lime juice",
+  "chia seeds",
+  "honey",
+  "kosher salt"
+  ],
+  "recipe":[
     "¾ cup almond milk",
     "¾ cup frozen blackberries and/or blueberries",
     "¼ cup grated beet (from about 1 small)",
@@ -376,7 +417,14 @@ const smoothies = [{
 {
   "id": 26,
   "name": "Copycat Jamba Juice Aloha Pineapple",
-  "ingredients": [
+  "ingredients":[
+  "banana",
+  "yogurt",
+  "pineapple",
+  "ice",
+  "strawberries"
+  ],
+  "recipe":[
     "1/2 banana",
     "1/2 cup yogurt",
     "1/2 cup pineapple, fresh",
@@ -390,7 +438,15 @@ const smoothies = [{
 {
   "id": 27,
   "name": "The World’s Best Green Smoothie",
-  "ingredients": [
+  "ingredients":[
+  "kale",
+  "milk",
+  "pear",
+  "banana",
+  "almond butter",
+  "vanilla extract"
+  ],
+  "recipe":[
     "¾ cup lightly packed kale",
     "½ cup milk",
     "1 small pear",
@@ -405,7 +461,15 @@ const smoothies = [{
 {
   "id": 28,
   "name": "Blueberry Muffin Smoothie",
-  "ingredients": [
+  "ingredients":[
+  "milk",
+  "blueberries",
+  "banana",
+  "raw oats",
+  "lemon zest",
+  "ice"
+  ],
+  "recipe":[
     "1/2 cup milk",
     "4 – 6 oz vanilla Greek yogurt",
     "1/2 cup frozen blueberries",
@@ -421,7 +485,14 @@ const smoothies = [{
 {
   "id": 29,
   "name": "Watermelon Peach Smoothie",
-  "ingredients": [
+  "ingredients":[
+  "watermelon",
+  "peach",
+  "milk",
+  "ice",
+  "mint leaves"
+  ],
+  "recipe":[
     "3 cups chopped watermelon",
     "1 ripe peach sliced",
     "1/2 cup plain coconut milk refrigerated, not canned",
@@ -435,7 +506,15 @@ const smoothies = [{
 {
   "id": 30,
   "name": "Cinnamon Roll Smoothie",
-  "ingredients": [
+  "ingredients":[
+  "milk",
+  "yogurt",
+  "oats",
+  "brown sugar",
+  "cinnamon",
+  "banana"
+  ],
+  "recipe":[
     "1 cup vanilla almond milk",
     "1/2 cup vanilla Greek yogurt",
     "1/4 cup old fashioned oats",
@@ -614,6 +693,7 @@ const ingredients = {
     "pear",
     "grapes",
     "avocado",
+    "peach"
   ],
 
   "vegetables": [
@@ -630,11 +710,11 @@ const ingredients = {
     "yogurt",
     "coconut water",
     "orange juice",
-    "coconut milk",
     "oats",
     "pomegranate juice",
     "juice",
-    "pineapple juice"
+    "pineapple juice",
+    "ice"
   ],
 
   "extras": [
