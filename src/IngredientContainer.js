@@ -17,10 +17,17 @@ export default class Ingredients extends Component {
         {
           this.state.categories.map(category => {
             return (
-              <div>
+              <div key={category}>
                 <h3>{category}</h3>
                 { this.props.ingredients[category].map(ingredient => {
-                  return <Ingredient ingredient={ingredient}/>
+                  return (
+                    <Ingredient 
+                      ingredient={ingredient} 
+                      key={ingredient} 
+                      chooseIngredients={this.props.chooseIngredients}
+                      removeIngredient={this.props.removeIngredient}
+                    />
+                  )
                 }).slice(0, 6)}
               </div>
             )

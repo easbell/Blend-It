@@ -10,16 +10,62 @@ class App extends Component {
 
     this.state = {
       smoothies: smoothies,
-      ingredients: ingredients
+      ingredients: ingredients,
+      error: '',
+      chosenIngredients: []
     }
+  }
+
+  fetchData = () => {
+    fetch('http://whateverly-datasets.herokuapp.com/api/v1/smoothies')
+    .then(response => response.json())
+    .then(result => {
+      this.setState({
+        smoothies: result.smoothies
+      })
+    })
+    .catch(error => {
+      this.setState({error: error.message})
+    })
+    fetch('http://whateverly-datasets.herokuapp.com/api/v1/ingredients')
+      .then(response => response.json())
+      .then(result => {
+        this.setState({
+          ingredients: result.ingredients
+        })
+      })
+      .catch(error => {
+      this.setState({error: error.message})
+      })
+  }
+  
+  componentDidMount() {
+    this.fetchData()
+  }
+
+  chooseIngredients = (ingredient) => {
+    const updatedIngredients = [ ...this.state.chosenIngredients, ingredient]
+    this.setState({chosenIngredients: updatedIngredients})
+  }
+
+  removeIngredient = (ingredient) => {
+    const updatedIngredients = this.state.chosenIngredients.filter(chosenIngredient => {
+      return chosenIngredient !== ingredient
+    })
+    this.setState({chosenIngredients: updatedIngredients})
   }
 
   render() {
     return (
       <div className="App">
+        {this.state.error && <p>{this.state.error}</p>}
         <h1>Blend It!</h1>
         <h2>Choose Your Ingredients</h2>
-        <IngredientContainer ingredients={this.state.ingredients}/>
+        <IngredientContainer 
+          ingredients={this.state.ingredients} 
+          chooseIngredients={this.chooseIngredients}
+          removeIngredient={this.removeIngredient}
+        />
         <SmoothieContainer smoothies={this.state.smoothies}/>
       </div>
     );
