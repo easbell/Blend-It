@@ -459,7 +459,7 @@ const smoothies = [{
   ],
   "servings": 1,
   "source": "http://allyscooking.com/2016/12/30/detox-green-smoothie-with-chia-seeds/",
-  "img": "./image/detox-chia.jpg"
+  "img": "image/detox-chia.jpg"
 },
 {
   "id": 21,
@@ -479,7 +479,7 @@ const smoothies = [{
   ],
   "servings": 2,
   "source": "https://thefitcookie.com/healthy-orange-creamsicle-smoothie/",
-  "img": "./oj-creamsicle.jpg"
+  "img": "images/oj-creamsicle.jpg"
 },
 {
   "id": 22,
@@ -501,7 +501,7 @@ const smoothies = [{
   ],
   "servings": 2,
   "source": "https://lmld.org/chocolate-peanut-butter-banana-smoothie/",
-  "img": "./choc-pb-banana.jpg"
+  "img": "images/choc-pb-banana.jpg"
 },
 {
   "id": 23,
@@ -522,7 +522,7 @@ const smoothies = [{
   ],
   "servings": 2,
   "source": "https://www.unsweetenedcaroline.com/glowing-green-spirulina-smoothie/",
-  "img": "./spirulina-bb.jpg"
+  "img": "images/spirulina-bb.jpg"
 },
 {
   "id": 24,
@@ -539,7 +539,7 @@ const smoothies = [{
   ],
   "servings": 2,
   "source": "https://www.pinterest.com/pin/359513982735684622/",
-  "img": "cherry-mango-anti.jpg"
+  "img": "images/cherry-mango-anti.jpg"
 },
 {
   "id": 25,
@@ -566,7 +566,7 @@ const smoothies = [{
   ],
   "servings": 1,
   "source": "https://www.bonappetit.com/recipe/berry-beet-mint-lime-chia-seed-smoothie",
-  "img": "./beats-bb.jpg"
+  "img": "images/beats-bb.jpg"
 },
 {
   "id": 26,
@@ -587,7 +587,7 @@ const smoothies = [{
   ],
   "servings": 2,
   "source": "https://www.sixsistersstuff.com/recipe/copycat-jamba-juice-aloha-pineapple-smoothie-recipe/",
-  "img": "./jamba-pineapple.jpg"
+  "img": "images/jamba-pineapple.jpg"
 },
 {
   "id": 27,
@@ -610,7 +610,7 @@ const smoothies = [{
   ],
   "servings": 1,
   "source": "https://www.smartnutrition.ca/recipes/worlds-best-green-smoothie-3/",
-  "img": "./worlds-best-green.jpg"
+  "img": "images/worlds-best-green.jpg"
 },
 {
   "id": 28,
@@ -634,7 +634,7 @@ const smoothies = [{
   ],
   "servings": 1,
   "source": "https://iowagirleats.com/2014/07/09/blueberry-muffin-smoothie/",
-  "img": "bb-muffin.jpg"
+  "img": "images/bb-muffin.jpg"
 },
 {
   "id": 29,
@@ -655,7 +655,7 @@ const smoothies = [{
   ],
   "servings": 2,
   "source": "https://www.seasonalcravings.com/watermelon-peach-smoothie/",
-  "img": "peach-watermelon.jpeg"
+  "img": "images/peach-watermelon.jpeg"
 },
 {
   "id": 30,
@@ -678,7 +678,7 @@ const smoothies = [{
   ],
   "servings": 2,
   "source": "https://www.familyfreshmeals.com/2015/04/cinnamon-roll-smoothie.html",
-  "img": "./images/cinnamon-roll.png"
+  "img": "images/cinnamon-roll.png"
 },
 {
   "id": 31,
@@ -693,7 +693,7 @@ const smoothies = [{
   ],
   "servings": 1,
   "source": "http://www.centercutcook.com/cookies-and-cream-smoothie/",
-  "img": "./images/cookies-cream.png"
+  "img": "images/cookies-cream.png"
 },
 {
   "id": 32,
@@ -707,7 +707,7 @@ const smoothies = [{
   ],
   "servings": 1,
   "source": "https://happyhealthymama.com/the-anti-bloat-smoothie.html#_a5y_p=4123702",
-  "img": "./images/antibloat.png"
+  "img": "images/antibloat.png"
 },
 {
   "id": 33,
@@ -722,7 +722,7 @@ const smoothies = [{
   ],
   "servings": 2,
   "source": "https://www.familyfreshmeals.com/2015/08/healthy-apple-pie-smoothie.html",
-  "img": "./images/apple-pie.png"
+  "img": "images/apple-pie.png"
 },
 {
   "id": 34,
@@ -736,7 +736,7 @@ const smoothies = [{
   ],
   "servings": 1,
   "source": "https://gatherforbread.com/easy-5-minute-pina-colada-smoothie/",
-  "img": "./images/pina-colada.png"
+  "img": "images/pina-colada.png"
 },
 {
   "id": 35,
@@ -750,7 +750,7 @@ const smoothies = [{
   ],
   "servings": 2,
   "source": "https://www.jessicagavin.com/raspberry-apple-smoothie-bananas/",
-  "img": "./images/rasp-apple.png"
+  "img": "images/rasp-apple.png"
 },
 {
   "id": 36,
@@ -764,7 +764,7 @@ const smoothies = [{
   ],
   "servings": 2,
   "source": "https://www.dinneratthezoo.com/cherry-smoothie/",
-  "img": "./images/cherry.png"
+  "img": "images/cherry.png"
 },
 {
   "id": 37,
@@ -777,7 +777,7 @@ const smoothies = [{
   ],
   "servings": 3,
   "source": "https://realfoodrealdeals.com/pomegranate-smoothie/",
-  "img": "./images/pomegranate.png"
+  "img": "images/pomegranate.png"
 },
 {
   "id": 38,
@@ -790,7 +790,7 @@ const smoothies = [{
   ],
   "servings": 1,
   "source": "https://gatherforbread.com/mango-vanilla-smoothie/",
-  "img": "./images/mango-vanilla.png"
+  "img": "images/mango-vanilla.png"
 },
 {
   "id": 39,
@@ -806,7 +806,7 @@ const smoothies = [{
   ],
   "servings": 1,
   "source": "https://www.leahsplate.com/vanilla-oat-protein-smoothie/",
-  "img": "./images/vanilla-oat.png"
+  "img": "images/vanilla-oat.png"
 },
 {
   "id": 40,
@@ -824,7 +824,7 @@ const smoothies = [{
   ],
   "servings": 1,
   "source": "https://sunkissedkitchen.com/green-spinach-mint-chocolate-chip-smoothie/",
-  "img": "./images/choc-mint.png"
+  "img": "images/choc-mint.png"
 }
 ]
 
