@@ -451,6 +451,14 @@ const smoothies = [{
   "id": 31,
   "name": "Cookies and Cream Smoothie",
   "ingredients": [
+    "banana",
+    "yogurt",
+    "vanilla extract",
+    "milk",
+    "chocolate sandwich cookies",
+    "whipped cream"
+  ],
+  "recipe": [
     "1/2 frozen banana",
     "1 cup vanilla yogurt or plain yogurt",
     "1 teaspoon vanilla extract",
@@ -466,6 +474,13 @@ const smoothies = [{
   "id": 32,
   "name": "Anti-Bloat Smoothie",
   "ingredients": [
+    "coconut water",
+    "banana",
+    "cucumber",
+    "ginger",
+    "ice"
+  ],
+  "recipe": [
     "1/2 cup coconut water",
     "1 banana",
     "1 large cucumber, sliced",
@@ -480,6 +495,14 @@ const smoothies = [{
   "id": 33,
   "name": "Healthy Apple Pie Smoothie",
   "ingredients": [
+    "yogurt",
+    "apple",
+    "milk",
+    "honey",
+    "ice",
+    "cinnamon"
+  ],
+  "recipe": [
     "6 oz vanilla yogurt",
     "1 apple chopped",
     "1/2 cup milk",
@@ -495,6 +518,13 @@ const smoothies = [{
   "id": 34,
   "name": "Healthy Pina Colada Smoothie",
   "ingredients": [
+    "banana",
+    "pineapple",
+    "pineapple",
+    "coconut milk",
+    "ice"
+  ],
+  "recipe": [
     "1/2 frozen banana",
     "1/2 cup frozen pineapple chunks",
     "1/3 cup pineapple or pina colada juice",
@@ -509,6 +539,13 @@ const smoothies = [{
   "id": 35,
   "name": "Raspberry Apple Smoothie with Bananas",
   "ingredients": [
+    "coconut water",
+    "bananas",
+    "apple",
+    "raspberries",
+    "ice"
+  ],
+  "recipe": [
     "1/2 cup coconut water",
     "2 medium-sized bananas",
     "2 cups apple, sliced, (1 large apple)",
@@ -523,6 +560,13 @@ const smoothies = [{
   "id": 36,
   "name": "Cherry Smoothie",
   "ingredients": [
+    "juice",
+    "banana",
+    "cherries",
+    "yogurt",
+    "cherries"
+  ],
+  "recipe": [
     "1 1/2 cups juice cherry juice, cran-cherry juice, apple juice or white grape juice",
     " 1 banana cut in half",
     "1 1/2 cups frozen dark sweet cherries",
@@ -537,6 +581,12 @@ const smoothies = [{
   "id": 37,
   "name": "Pomegranate Smoothie",
   "ingredients": [
+    "pomegranate juice",
+    "coconut milk",
+    "banana",
+    "blueberries"
+  ],
+  "recipe": [
     "1 cup pomegranate juice",
     "½ cup coconut milk",
     "1 medium banana",
@@ -550,6 +600,12 @@ const smoothies = [{
   "id": 38,
   "name": "Mango Vanilla Smoothie",
   "ingredients": [
+    "mango",
+    "yogurt",
+    "milk",
+    "vanilla extract"
+  ],
+  "recipe": [
     "1 cup frozen mango chunks",
     "1/4 cup 2 ounces plain Greek yogurt",
     "1/4 cup vanilla soymilk",
@@ -563,6 +619,15 @@ const smoothies = [{
   "id": 39,
   "name": "Vegan Oat Smoothie",
   "ingredients": [
+    "milk",
+    "almond butter",
+    "banana",
+    "protein powder",
+    "oats",
+    "cinnamon",
+    "sea salt"
+  ],
+  "recipe": [
     "1 cup almond milk",
     "1 tbsp almond butter",
     "1 frozen banana",
@@ -579,6 +644,17 @@ const smoothies = [{
   "id": 40,
   "name": "Ultra Dreamy Mint Chocolate Chip Smoothie",
   "ingredients": [
+    "yogurt",
+    "coconut milk",
+    "spinach",
+    "ice",
+    "banana",
+    "1 tablespoon plain whey protein",
+    "peppermint extract",
+    "honey (optional)",
+    "1chocolate chips"
+  ],
+  "recipe": [
     "¼ cup plain yogurt",
     "¼ cup coconut milk (canned)",
     "1 cup frozen spinach (or 3-4 cups fresh)",
