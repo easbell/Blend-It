@@ -1,0 +1,168 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IngredientContainer should match a snapshot with all data passed in 1`] = `
+<div
+  className="ingredients-container"
+>
+  <div
+    key="fruit"
+  >
+    <h3>
+      fruit
+    </h3>
+    <Ingredient
+      chooseIngredients={[MockFunction]}
+      ingredient="banana"
+      key="banana"
+      removeIngredient={[MockFunction]}
+    />
+    <Ingredient
+      chooseIngredients={[MockFunction]}
+      ingredient="pineapple"
+      key="pineapple"
+      removeIngredient={[MockFunction]}
+    />
+    <Ingredient
+      chooseIngredients={[MockFunction]}
+      ingredient="mango"
+      key="mango"
+      removeIngredient={[MockFunction]}
+    />
+    <Ingredient
+      chooseIngredients={[MockFunction]}
+      ingredient="cherries"
+      key="cherries"
+      removeIngredient={[MockFunction]}
+    />
+    <Ingredient
+      chooseIngredients={[MockFunction]}
+      ingredient="blueberries"
+      key="blueberries"
+      removeIngredient={[MockFunction]}
+    />
+    <Ingredient
+      chooseIngredients={[MockFunction]}
+      ingredient="strawberries"
+      key="strawberries"
+      removeIngredient={[MockFunction]}
+    />
+  </div>
+  <div
+    key="vegetables"
+  >
+    <h3>
+      vegetables
+    </h3>
+    <Ingredient
+      chooseIngredients={[MockFunction]}
+      ingredient="spinach"
+      key="spinach"
+      removeIngredient={[MockFunction]}
+    />
+    <Ingredient
+      chooseIngredients={[MockFunction]}
+      ingredient="kale"
+      key="kale"
+      removeIngredient={[MockFunction]}
+    />
+    <Ingredient
+      chooseIngredients={[MockFunction]}
+      ingredient="carrot"
+      key="carrot"
+      removeIngredient={[MockFunction]}
+    />
+    <Ingredient
+      chooseIngredients={[MockFunction]}
+      ingredient="power greens mix"
+      key="power greens mix"
+      removeIngredient={[MockFunction]}
+    />
+    <Ingredient
+      chooseIngredients={[MockFunction]}
+      ingredient="cucumber"
+      key="cucumber"
+      removeIngredient={[MockFunction]}
+    />
+    <Ingredient
+      chooseIngredients={[MockFunction]}
+      ingredient="beet"
+      key="beet"
+      removeIngredient={[MockFunction]}
+    />
+  </div>
+  <div
+    key="bases"
+  >
+    <h3>
+      bases
+    </h3>
+    <Ingredient
+      chooseIngredients={[MockFunction]}
+      ingredient="milk"
+      key="milk"
+      removeIngredient={[MockFunction]}
+    />
+    <Ingredient
+      chooseIngredients={[MockFunction]}
+      ingredient="yogurt"
+      key="yogurt"
+      removeIngredient={[MockFunction]}
+    />
+    <Ingredient
+      chooseIngredients={[MockFunction]}
+      ingredient="coconut water"
+      key="coconut water"
+      removeIngredient={[MockFunction]}
+    />
+    <Ingredient
+      chooseIngredients={[MockFunction]}
+      ingredient="orange juice"
+      key="orange juice"
+      removeIngredient={[MockFunction]}
+    />
+  </div>
+  <div
+    key="extras"
+  >
+    <h3>
+      extras
+    </h3>
+    <Ingredient
+      chooseIngredients={[MockFunction]}
+      ingredient="chia seeds"
+      key="chia seeds"
+      removeIngredient={[MockFunction]}
+    />
+    <Ingredient
+      chooseIngredients={[MockFunction]}
+      ingredient="ginger"
+      key="ginger"
+      removeIngredient={[MockFunction]}
+    />
+    <Ingredient
+      chooseIngredients={[MockFunction]}
+      ingredient="cinnamon"
+      key="cinnamon"
+      removeIngredient={[MockFunction]}
+    />
+    <Ingredient
+      chooseIngredients={[MockFunction]}
+      ingredient="protein powder"
+      key="protein powder"
+      removeIngredient={[MockFunction]}
+    />
+    <Ingredient
+      chooseIngredients={[MockFunction]}
+      ingredient="honey"
+      key="honey"
+      removeIngredient={[MockFunction]}
+    />
+    <Ingredient
+      chooseIngredients={[MockFunction]}
+      ingredient="almond butter"
+      key="almond butter"
+      removeIngredient={[MockFunction]}
+    />
+  </div>
+</div>
+`;

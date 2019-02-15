@@ -44,26 +44,43 @@ class App extends Component {
     this.fetchData()
   }
 
+  componentDidUpdate(prevProps, prevState) {
+    if (prevState.chosenIngredients.length !== this.state.chosenIngredients.length) {
+      this.filterSmoothies()
+    }
+  }
+
   chooseIngredients = (ingredient) => {
     const updatedIngredients = [ ...this.state.chosenIngredients, ingredient]
-    this.setState({chosenIngredients: updatedIngredients})
-    this.filterSmoothies();
+
+    this.setState({ chosenIngredients: updatedIngredients })
   }
 
   removeIngredient = (ingredient) => {
     const updatedIngredients = this.state.chosenIngredients.filter(chosenIngredient => {
       return chosenIngredient !== ingredient
     })
-    this.filterSmoothies();
-    this.setState({chosenIngredients: updatedIngredients})
+
+    this.setState({ chosenIngredients: updatedIngredients })
   }
 
   filterSmoothies = () => {
-    this.state.chosenIngredients.forEach(ingredient => {
-      this.state.smoothies = smoothies.filter(smoothie => {
-        return smoothie.ingredients.includes(ingredient)
-      })
+    const { chosenIngredients } = this.state
+    // keep an updated list of smoothies that follow the rules
+
+    const matching = this.state.smoothies.filter(smoothie => {
+      //array of all things that match
+      let matched = false
+
+       chosenIngredients.forEach(chosen=>{
+          matched = smoothie.ingredients.includes(chosen)
+       })
+
+       console.log(matched)
+       return matched
     })
+    console.log(matching, chosenIngredients)
+    this.setState({ smoothies: matching })
   }
 
   render() {

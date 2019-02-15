@@ -9,6 +9,7 @@ export default class Smoothie extends Component {
     return (
       <div>
         {this.props.name}
+        <img src={this.props.img}/>
       </div>
     )
   }

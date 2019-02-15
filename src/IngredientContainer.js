@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Ingredient from './Ingredient.js';
-import './IngredientsContainer.css';
+import './IngredientContainer.css';
 
 // Ingredient selection at start
 export default class Ingredients extends Component {
@@ -10,8 +10,8 @@ export default class Ingredients extends Component {
       categories: Object.keys(this.props.ingredients)
     }
   }
+  
   render() {
-
     return (
       <div className='ingredients-container'>
         {
