@@ -12,15 +12,14 @@ export default class Ingredient extends Component {
 
   selectIngredient = () => {
     const {isChosen} = this.state
-    const {ingredient, chooseIngredients} = this.props
-    this.setState({isChosen: !isChosen}, chooseIngredients(ingredient))
-    
-  }
+    const {ingredient, chooseIngredients, removeIngredient} = this.props
 
-  removeIngredient = () => {
-    const {isChosen} = this.state
-    const {ingredient, removeIngredient} = this.props
-    this.setState({isChosen: !isChosen}, removeIngredient(ingredient))
+    if (isChosen === true) {
+      this.setState({isChosen: !isChosen}, removeIngredient(ingredient))
+    } else if (isChosen === false) {
+      this.setState({isChosen: !isChosen}, chooseIngredients(ingredient))
+    }
+    
   }
 
   render() {
@@ -34,7 +33,7 @@ export default class Ingredient extends Component {
           </h4>
         }
         {isChosen && 
-          <h4 className='selected' onClick={this.removeIngredient}>
+          <h4 className='selected' onClick={this.selectIngredient}>
             {ingredient}
           </h4>
         }
