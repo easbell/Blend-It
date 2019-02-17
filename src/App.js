@@ -13,7 +13,6 @@ class App extends Component {
       ingredients: ingredients,
       error: '',
       chosenIngredients: [],
-      // filteredSmoothies: smoothies
     }
   }
 
@@ -96,7 +95,6 @@ class App extends Component {
         />
         <SmoothieContainer 
           smoothies={this.state.smoothies}
-          // filteredSmoothies={this.state.filteredSmoothies}
         />
       </div>
     );
