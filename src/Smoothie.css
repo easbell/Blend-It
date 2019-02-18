@@ -1,0 +1,15 @@
+/* div .smoothie {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+div h3 {
+  width: 40rem;
+}
+*/
+
+img {
+  width: 40rem;
+  height: 40rem;
+} 

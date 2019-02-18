@@ -1,13 +1,16 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
-export class Recipe extends Component {
-  render() {
-    return (
-      <div>
-        {/* Individual Recipe */}
-      </div>
-    )
-  }
+export default function Recipe(props) {
+  return (
+    <div>
+      {
+        props.recipe.map(steps => {
+          return (
+            <li>{steps}</li>
+          )
+        })
+      }
+    </div>
+  )
 }
 
-export default Recipe
