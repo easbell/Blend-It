@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Ingredient from './Ingredient.js';
+import ChosenIngredientList from './ChosenIngredientList.js'
 import './IngredientContainer.css';
 
 // Ingredient selection at start
