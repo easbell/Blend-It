@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SmoothieContainer should match a snapshot with all data passed in 1`] = `
+<div>
+  <Smoothie
+    img="images/babe-ruth.jpg"
+    key="1"
+    name="Babe Ruth Strawberry Pineapple Banana Smoothie"
+  />
+  <Smoothie
+    img="images/cherry-almond.jpg"
+    key="2"
+    name="Cherry Almond Smoothie"
+  />
+</div>
+`;

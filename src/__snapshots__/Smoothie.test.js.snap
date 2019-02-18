@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Smoothie should match a snapshot with all data passed in 1`] = `
+<div>
+  Babe Ruth Strawberry Pineapple Banana Smoothie
+</div>
+`;

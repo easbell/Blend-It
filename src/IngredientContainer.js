@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Ingredient from './Ingredient.js';
-import './IngredientsContainer.css';
+import './IngredientContainer.css';
 
 // Ingredient selection at start
 export default class Ingredients extends Component {
@@ -10,17 +10,24 @@ export default class Ingredients extends Component {
       categories: Object.keys(this.props.ingredients)
     }
   }
+  
   render() {
-
     return (
       <div className='ingredients-container'>
         {
           this.state.categories.map(category => {
             return (
-              <div>
+              <div key={category}>
                 <h3>{category}</h3>
                 { this.props.ingredients[category].map(ingredient => {
-                  return <Ingredient ingredient={ingredient}/>
+                  return (
+                    <Ingredient 
+                      ingredient={ingredient} 
+                      key={ingredient} 
+                      chooseIngredients={this.props.chooseIngredients}
+                      removeIngredient={this.props.removeIngredient}
+                    />
+                  )
                 }).slice(0, 6)}
               </div>
             )
