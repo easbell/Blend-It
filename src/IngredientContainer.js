@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Ingredient from './Ingredient.js';
 import './IngredientContainer.css';
 
-export default class Ingredients extends Component {
+export class IngredientContainer extends Component {
   constructor(props) {
     super(props);
     
@@ -10,31 +10,30 @@ export default class Ingredients extends Component {
       categories: ['fruit', 'vegetables', 'bases', 'extras']
     }
   }
+
+  gatherIngredients = () => {
+    return this.state.categories.map(category => {
+      return (
+        <div key={category}>
+          <h3>{category}</h3>
+          { this.props.ingredients[category].map(ingredient => {
+            return (
+              <Ingredient 
+                ingredient={ingredient} 
+                key={ingredient} 
+                chooseIngredients={this.props.chooseIngredients}
+                removeIngredient={this.props.removeIngredient}
+              />
+            )
+          }).slice(0, 6) }
+        </div>)
+    })
+  }
   
   render() {
-    console.log(this.props.ingredients)
-    console.log(this.state)
     return (
       <div className='ingredients-container'>
-        {
-          this.state.categories.map(category => {
-            return (
-              <div key={category}>
-                <h3>{category}</h3>
-                { this.props.ingredients[category].map(ingredient => {
-                  return (
-                    <Ingredient 
-                      ingredient={ingredient} 
-                      key={ingredient} 
-                      chooseIngredients={this.props.chooseIngredients}
-                      removeIngredient={this.props.removeIngredient}
-                    />
-                  )
-                }).slice(0, 6)}
-              </div>
-            )
-          })
-        }
+        {this.gatherIngredients()}
       </div>
     )
   }

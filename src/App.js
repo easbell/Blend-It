@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import SmoothieContainer from './SmoothieContainer.js'
-import IngredientContainer from './IngredientContainer.js'
+import {IngredientContainer} from './IngredientContainer.js'
 import './App.css';
 
 class App extends Component {
@@ -15,19 +15,22 @@ class App extends Component {
     }
   }
 
-  fetchData = () => {
+  // fetchData = () => {
+
+  
+  componentDidMount() {
     fetch('http://whateverly-datasets.herokuapp.com/api/v1/smoothies')
-    .then(data => data.json())
-    .then(data => {
+    .then(response => response.json())
+    .then(result => {
       this.setState({
-        smoothies: data.smoothies
+        smoothies: result.smoothies
       })
     })
     .catch(error => {
       this.setState({error: error.message})
     })
     fetch('http://whateverly-datasets.herokuapp.com/api/v1/ingredients')
-      .then(data => data.json())
+      .then(response => response.json())
       .then(data => {
         this.setState({
           ingredients: data.ingredients
@@ -36,10 +39,6 @@ class App extends Component {
       .catch(error => {
       this.setState({error: error.message})
       })
-    }
-  
-  componentDidMount() {
-    this.fetchData()
   }
 
   componentDidUpdate(prevProps, prevState) {
@@ -78,16 +77,18 @@ class App extends Component {
         {this.state.error && <p>{this.state.error}</p>}
         <h1>Blend It!</h1>
         <h2>Choose Your Ingredients</h2>
-        <IngredientContainer 
-          ingredients={this.state.ingredients} 
-          chooseIngredients={this.chooseIngredients}
-          removeIngredient={this.removeIngredient}
-        />
+        {Object.keys(this.state.ingredients).length > 0 && 
+          <IngredientContainer 
+            ingredients={this.state.ingredients} 
+            chooseIngredients={this.chooseIngredients}
+            removeIngredient={this.removeIngredient}
+          />
+        }
         <SmoothieContainer 
           smoothies={this.state.smoothies}
         />
       </div>
-    );
+    )
   }
 }
 
