@@ -2,6 +2,16 @@
 
 exports[`Smoothie should match a snapshot with all data passed in 1`] = `
 <div>
-  Babe Ruth Strawberry Pineapple Banana Smoothie
+  <div
+    className="smoothie"
+    onClick={[Function]}
+  >
+    <h3>
+      Babe Ruth Strawberry Pineapple Banana Smoothie
+    </h3>
+    <img
+      src="images/babe-ruth.jpg"
+    />
+  </div>
 </div>
 `;
