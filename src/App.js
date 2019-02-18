@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {smoothies, ingredients} from './smoothie-data.js'
 import SmoothieContainer from './SmoothieContainer.js'
 import IngredientContainer from './IngredientContainer.js'
 import './App.css';
@@ -9,35 +8,35 @@ class App extends Component {
     super();
 
     this.state = {
-      smoothies: smoothies,
-      ingredients: ingredients,
+      smoothies: [],
+      ingredients: {},
       error: '',
-      chosenIngredients: [],
+      chosenIngredients: []
     }
   }
 
   fetchData = () => {
     fetch('http://whateverly-datasets.herokuapp.com/api/v1/smoothies')
-    .then(response => response.json())
-    .then(result => {
+    .then(data => data.json())
+    .then(data => {
       this.setState({
-        smoothies: result.smoothies
+        smoothies: data.smoothies
       })
     })
     .catch(error => {
       this.setState({error: error.message})
     })
     fetch('http://whateverly-datasets.herokuapp.com/api/v1/ingredients')
-      .then(response => response.json())
-      .then(result => {
+      .then(data => data.json())
+      .then(data => {
         this.setState({
-          ingredients: result.ingredients
+          ingredients: data.ingredients
         })
       })
       .catch(error => {
       this.setState({error: error.message})
       })
-  }
+    }
   
   componentDidMount() {
     this.fetchData()
@@ -51,7 +50,6 @@ class App extends Component {
 
   chooseIngredients = (ingredient) => {
     const updatedIngredients = [ ...this.state.chosenIngredients, ingredient]
-
     this.setState({ chosenIngredients: updatedIngredients })
   }
 
@@ -59,20 +57,16 @@ class App extends Component {
     const updatedIngredients = this.state.chosenIngredients.filter(chosenIngredient => {
       return chosenIngredient !== ingredient
     })
-
     this.setState({ chosenIngredients: updatedIngredients })
   }
 
   filterSmoothies = () => {
     const { chosenIngredients } = this.state
-
     const matching = this.state.smoothies.filter(smoothie => {
       let matched = false
-
        chosenIngredients.forEach(chosen=>{
           matched = smoothie.ingredients.includes(chosen)
        })
-
        return matched
     })
     this.setState({ smoothies: matching })

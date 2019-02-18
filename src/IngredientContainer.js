@@ -2,16 +2,18 @@ import React, { Component } from 'react';
 import Ingredient from './Ingredient.js';
 import './IngredientContainer.css';
 
-// Ingredient selection at start
 export default class Ingredients extends Component {
   constructor(props) {
     super(props);
+    
     this.state = {
-      categories: Object.keys(this.props.ingredients)
+      categories: ['fruit', 'vegetables', 'bases', 'extras']
     }
   }
   
   render() {
+    console.log(this.props.ingredients)
+    console.log(this.state)
     return (
       <div className='ingredients-container'>
         {
