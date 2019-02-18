@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import Smoothie from './Smoothie.js'
+import Smoothie from './Smoothie.js';
+import Recipe from './Recipe.js';
 
 export default class SmoothieContainer extends Component {
   constructor(props) {
@@ -38,14 +39,17 @@ export default class SmoothieContainer extends Component {
             })
           }
         {showRecipe && 
-          <Smoothie 
-            showRecipe={this.showRecipe}
-            name={smoothieRecipe.name}
-            img={smoothieRecipe.img}
-            recipe={smoothieRecipe.recipe}
-            key={smoothieRecipe.id}
-            id={smoothieRecipe.id}
-          />
+          <div>
+            <Smoothie 
+              showRecipe={this.showRecipe}
+              name={smoothieRecipe.name}
+              img={smoothieRecipe.img}
+              recipe={smoothieRecipe.recipe}
+              key={smoothieRecipe.id}
+              id={smoothieRecipe.id}
+            />
+            <Recipe recipe={smoothieRecipe.recipe}/>
+          </div>
         }
       </div>
     )

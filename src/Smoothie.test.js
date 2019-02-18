@@ -30,18 +30,28 @@ source: "https://www.modernhoney.com/6-healthy-superfood-smoothies/",
 img: "images/babe-ruth.jpg"
 };
 
+const showRecipeMock = jest.fn();
 
 describe('Smoothie', () => {
   const wrapper = shallow(
-    <Smoothie 
-      name = {mockSmoothie.name}
-      key = {mockSmoothie.id}
-      img = {mockSmoothie.img}
+    <Smoothie
+      showRecipe={showRecipeMock}
+      name={mockSmoothie.name}
+      img={mockSmoothie.img}
+      recipe={mockSmoothie.recipe}
+      key={mockSmoothie.id}
+      id={mockSmoothie.id}
     />
   );
 
   it('should match a snapshot with all data passed in', () => {
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('should should have proper default states', () => {
+    expect(wrapper.state()).toEqual({isSelected: false})
+  });
+
+  
 
 });
