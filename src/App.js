@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import SmoothieContainer from './SmoothieContainer.js'
 import {IngredientContainer} from './IngredientContainer.js'
+import ChosenIngredientList from './ChosenIngredientList.js'
 import './App.css';
 
 class App extends Component {
@@ -14,9 +15,6 @@ class App extends Component {
       chosenIngredients: []
     }
   }
-
-  // fetchData = () => {
-
   
   componentDidMount() {
     fetch('http://whateverly-datasets.herokuapp.com/api/v1/smoothies')
@@ -77,6 +75,7 @@ class App extends Component {
         {this.state.error && <p>{this.state.error}</p>}
         <h1>Blend It!</h1>
         <h2>Choose Your Ingredients</h2>
+        <ChosenIngredientList ingredients={this.state.chosenIngredients} />
         {Object.keys(this.state.ingredients).length > 0 && 
           <IngredientContainer 
             ingredients={this.state.ingredients} 

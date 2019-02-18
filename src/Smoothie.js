@@ -11,9 +11,9 @@ export default class Smoothie extends Component {
 
   expandRecipe = () => {
     const {isSelected} = this.state
+    const {showRecipe} = this.props
     this.setState({isSelected: !isSelected})
-    this.props.showRecipe(this.props)
-    console.log(this.props.recipe)
+    showRecipe(this.props)
   }
   
   render = () => {
