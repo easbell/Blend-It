@@ -1,10 +1,16 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import Smoothie from './Smoothie.js';
 
 export class Recipe extends Component {
   render() {
+    console.log(this.props)
     return (
       <div>
-        {/* Individual Recipe */}
+        {
+          this.props.recipe.map(steps => {
+            return <p>steps</p>
+          })
+        }
       </div>
     )
   }

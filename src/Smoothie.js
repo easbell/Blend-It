@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Recipe from './Recipe.js';
 import './Smoothie.css';
 
 export default class Smoothie extends Component {
@@ -30,6 +31,7 @@ export default class Smoothie extends Component {
           <div className='smoothie'>
             <h3>{this.props.name}</h3>
             <img src={this.props.img}/>
+            <Recipe recipe={this.props.recipe}/>
           </div>
         }
       </div>
