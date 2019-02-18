@@ -6,7 +6,6 @@ export default function SmoothieContainer(props) {
     <div>
       {
       props.smoothies.map(smoothie => {
-        // console.log("image", smoothie.img)
         return (
           <Smoothie 
             name={smoothie.name}

@@ -13,8 +13,7 @@ class App extends Component {
       smoothies: smoothies,
       ingredients: ingredients,
       error: '',
-      chosenIngredients: []
-      // filteredSmoothies: smoothies
+      chosenIngredients: [],
     }
   }
 
@@ -67,20 +66,16 @@ class App extends Component {
 
   filterSmoothies = () => {
     const { chosenIngredients } = this.state
-    // keep an updated list of smoothies that follow the rules
 
     const matching = this.state.smoothies.filter(smoothie => {
-      //array of all things that match
       let matched = false
 
        chosenIngredients.forEach(chosen=>{
           matched = smoothie.ingredients.includes(chosen)
        })
 
-       console.log(matched)
        return matched
     })
-    console.log(matching, chosenIngredients)
     this.setState({ smoothies: matching })
   }
 
@@ -98,7 +93,6 @@ class App extends Component {
         />
         <SmoothieContainer 
           smoothies={this.state.smoothies}
-          // filteredSmoothies={this.state.filteredSmoothies}
         />
       </div>
     );
