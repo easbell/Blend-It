@@ -1,29 +1,58 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Recipe should match a snapshot with all data passed in 1`] = `
-<div>
-  <li>
+<div
+  className="recipe-details"
+>
+  <h4>
+    Servings: 
+    4
+  </h4>
+  <h4>
+    <a
+      href="https://www.modernhoney.com/6-healthy-superfood-smoothies/"
+    >
+      Source
+    </a>
+  </h4>
+  <li
+    key="1 cup strawberries"
+  >
     1 cup strawberries
   </li>
-  <li>
+  <li
+    key="1/2 cup pineapple"
+  >
     1/2 cup pineapple
   </li>
-  <li>
+  <li
+    key="1 banana"
+  >
     1 banana
   </li>
-  <li>
+  <li
+    key="2 cups orange juice"
+  >
     2 cups orange juice
   </li>
-  <li>
+  <li
+    key="1/2 cup greek yogurt"
+  >
     1/2 cup greek yogurt
   </li>
-  <li>
+  <li
+    key="1 cup spinach, optional"
+  >
     1 cup spinach, optional
   </li>
-  <li>
+  <li
+    key="1 tablespoon chia or flaxseed, optional"
+  >
     1 tablespoon chia or flaxseed, optional
   </li>
-  <li>
+  <li
+    key="ice"
+  >
     ice
   </li>
 </div>

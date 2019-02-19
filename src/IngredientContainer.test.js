@@ -60,8 +60,7 @@ describe('IngredientContainer', () => {
 
   it('should have proper default states', () => {
     expect(wrapper.state()).toEqual({categories: ['fruit', 'vegetables', 'bases', 'extras']})
-  })
-
+  });
   
 });
 

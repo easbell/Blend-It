@@ -39,10 +39,7 @@ class App extends Component {
   }
 
   componentDidUpdate(prevProps, prevState) {
-    console.log(prevState);
-    console.log('chosen length', prevState.chosenIngredients.length);
-    console.log('state length', this.state.chosenIngredients.length);
-        if (prevState.chosenIngredients.length !== this.state.chosenIngredients.length) {
+    if (prevState.chosenIngredients.length !== this.state.chosenIngredients.length) {
       this.filterSmoothies();
     } 
   }
@@ -72,8 +69,6 @@ class App extends Component {
   }
 
   render() {
-    // console.log(this.state.chosenIngredients)
-    // console.log(this.state.ingredients)
     return (
       <div className="App">
         {this.state.error && <p>{this.state.error}</p>}

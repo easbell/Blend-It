@@ -88,6 +88,27 @@ describe('App', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
+  it('should have proper default states', () => {
+    expect(wrapper.state()).toEqual({smoothies: [], ingredients: {}, error: '', chosenIngredients: []})
+  })
+
+  it('should update the chosen ingredients when ingredient is selected', () => {
+    expect(wrapper.state("chosenIngredients")).toEqual([])
+    wrapper.instance().chooseIngredients("milk")
+    expect(wrapper.state("chosenIngredients")).toEqual(["milk"])
+  });
+
+  it('should update the chosen ingredients when ingredient is de-selected', () => {
+    expect(wrapper.state("chosenIngredients")).toEqual(["milk"])
+    wrapper.instance().removeIngredient("milk")
+    expect(wrapper.state("chosenIngredients")).toEqual([])
+  });
+
+  // it('should only show smoothies which match each chosen ingredient', () => {
+  //   expect(wrapper.state("chosenIngredients")).toEqual(["oats"])
+  //   wrapper.instance().filterSmoothies()
+  //   expect(wrapper.state("smoothies").length).toEqual(3)
+  // });
 });
 
 

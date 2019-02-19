@@ -8,7 +8,7 @@ export default function Recipe(props) {
       {
         props.chosenRecipe.recipe.map(steps => {
           return (
-              <li>{steps}</li>
+              <li key={steps}>{steps}</li>
           )
         })
       }

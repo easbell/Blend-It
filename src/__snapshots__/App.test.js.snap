@@ -14,6 +14,7 @@ exports[`App should match a snapshot with all data passed in 1`] = `
     ingredients={Array []}
   />
   <SmoothieContainer
+    chosenIngredients={Array []}
     smoothies={Array []}
   />
 </div>

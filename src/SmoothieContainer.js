@@ -17,7 +17,6 @@ export default class SmoothieContainer extends Component {
   }
 
   render = () => {
-    console.log(this.props.chosenIngredients)
     const {showRecipe, chosenSmoothie} = this.state;
     let smoothieRecipe = this.props.smoothies.find(smoothie => {
       return smoothie.id === chosenSmoothie
