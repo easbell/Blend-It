@@ -1,21 +1,22 @@
-/* div .smoothie {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+// div .smoothie {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+// }
 
-div h3 {
-  width: 40rem;
+.smoothie h3 {
+  font-size: 26px;
+  color: white;
 }
-*/
 
 img {
   border: 5px solid #E8DB7D;
   border-radius: 50%;
   height: 20rem;
   width: 20rem;
-} 
-
-img:hover {
-  border: 5px solid #558C8C;
+  margin-bottom: 25px;
+  box-shadow: -7px 7px 11px #6c1b39;
+  &:hover {
+    border: 5px solid #558C8C;
+  }
 }
