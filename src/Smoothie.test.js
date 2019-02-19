@@ -52,6 +52,13 @@ describe('Smoothie', () => {
     expect(wrapper.state()).toEqual({isSelected: false})
   });
 
+  it('should change the state of isSelected and invoke showRecipe when smoothie is clicked', () => {
+    expect(wrapper.state('isSelected')).toEqual(false);
+    wrapper.find('.smoothie').simulate('click');
+    expect(wrapper.state('isSelected')).toEqual(true);
+
+    expect(showRecipeMock).toBeCalled();
+  })
   
 
 });
