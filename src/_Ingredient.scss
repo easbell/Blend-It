@@ -1,5 +1,6 @@
 .selected {
   background-color: #E8DB7D;
+  color: #000;
   padding: 10px;
   cursor: pointer;
   border-radius: 5px;
@@ -8,8 +9,6 @@
 .not-selected {
   padding: 10px;
   cursor: pointer;
-}
-
-.ingredient-list h4 {
-  color: white;
+  color: #fff;
+  text-shadow: -1px 2px 3px #2f3d3d;
 }
