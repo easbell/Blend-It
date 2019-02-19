@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './Smoothie.css';
 
 export default class Smoothie extends Component {
   constructor(props) {

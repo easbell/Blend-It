@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Ingredient from './Ingredient.js';
-import './IngredientContainer.css';
 
 export class IngredientContainer extends Component {
   constructor(props) {

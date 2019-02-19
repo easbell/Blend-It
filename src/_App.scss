@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Open Sans Condensed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #231123;
+}
+
+.App {
+  text-align: center;
+  background-color: #82204A;
+}
+
+h1 {
+  font-family: Sacramento;
+  font-size: 76px;
+  padding: 10px;
+  margin-bottom: 5px;
+  color: #E8DB7D;
+}
+
+h2 {
+  color: #558C8C;
+  letter-spacing: 2px;
+  font-size: 32px;
+  margin: 0;
+}
+
+// code {
+//   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+//     monospace;
+// }

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './Recipe.css';
 
 export default function Recipe(props) {
   return (
