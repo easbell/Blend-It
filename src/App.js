@@ -40,9 +40,12 @@ class App extends Component {
   }
 
   componentDidUpdate(prevProps, prevState) {
-    if (prevState.chosenIngredients.length !== this.state.chosenIngredients.length) {
-      this.filterSmoothies()
-    }
+    console.log(prevState);
+    console.log('chosen length', prevState.chosenIngredients.length);
+    console.log('state length', this.state.chosenIngredients.length);
+        if (prevState.chosenIngredients.length !== this.state.chosenIngredients.length) {
+      this.filterSmoothies();
+    } 
   }
 
   chooseIngredients = (ingredient) => {
@@ -58,18 +61,20 @@ class App extends Component {
   }
 
   filterSmoothies = () => {
-    const { chosenIngredients } = this.state
+    const { chosenIngredients } = this.state;
     const matching = this.state.smoothies.filter(smoothie => {
-      let matched = false
-       chosenIngredients.forEach(chosen=>{
-          matched = smoothie.ingredients.includes(chosen)
+      let matched = false;
+       chosenIngredients.forEach(chosen=> {
+          matched = smoothie.ingredients.includes(chosen);
        })
-       return matched
+       return matched;
     })
-    this.setState({ smoothies: matching })
+    this.setState({ smoothies: matching });
   }
 
   render() {
+    // console.log(this.state.chosenIngredients)
+    // console.log(this.state.ingredients)
     return (
       <div className="App">
         {this.state.error && <p>{this.state.error}</p>}
@@ -85,6 +90,7 @@ class App extends Component {
         }
         <SmoothieContainer 
           smoothies={this.state.smoothies}
+          chosenIngredients={this.state.chosenIngredients}
         />
       </div>
     )

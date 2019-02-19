@@ -10,6 +10,12 @@ div h3 {
 */
 
 img {
-  width: 40rem;
-  height: 40rem;
+  border: 5px solid #E8DB7D;
+  border-radius: 50%;
+  height: 10rem;
+  width: 10rem;
 } 
+
+img:hover {
+  border: 5px solid #558C8C;
+}
