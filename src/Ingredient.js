@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import IngredientContainer from './IngredientContainer.js';
 import './Ingredient.css';
 
 export default class Ingredient extends Component {

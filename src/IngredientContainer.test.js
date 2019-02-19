@@ -1,6 +1,6 @@
 import React from 'react';
 import IngredientContainer from './IngredientContainer.js';
-import { shallow } from 'enzyme';
+import { shallow, mount } from 'enzyme';
 
 const mockIngredients = {
   fruit: [
@@ -45,7 +45,7 @@ describe('IngredientContainer', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = shallow(
+    wrapper = mount(
       <IngredientContainer 
         ingredients={mockIngredients} 
         chooseIngredients={chooseIngredientsMock}
@@ -58,9 +58,10 @@ describe('IngredientContainer', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it('should should have property default states', () => {
-    expect(wrapper.state()).toEqual({categories: Object.keys(mockIngredients)})
+  it('should have proper default states', () => {
+    expect(wrapper.state()).toEqual({categories: ['fruit', 'vegetables', 'bases', 'extras']})
   })
 
+  
 });
 
