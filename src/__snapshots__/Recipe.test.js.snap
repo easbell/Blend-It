@@ -15,45 +15,47 @@ exports[`Recipe should match a snapshot with all data passed in 1`] = `
       Source
     </a>
   </h4>
-  <li
-    key="1 cup strawberries"
-  >
-    1 cup strawberries
-  </li>
-  <li
-    key="1/2 cup pineapple"
-  >
-    1/2 cup pineapple
-  </li>
-  <li
-    key="1 banana"
-  >
-    1 banana
-  </li>
-  <li
-    key="2 cups orange juice"
-  >
-    2 cups orange juice
-  </li>
-  <li
-    key="1/2 cup greek yogurt"
-  >
-    1/2 cup greek yogurt
-  </li>
-  <li
-    key="1 cup spinach, optional"
-  >
-    1 cup spinach, optional
-  </li>
-  <li
-    key="1 tablespoon chia or flaxseed, optional"
-  >
-    1 tablespoon chia or flaxseed, optional
-  </li>
-  <li
-    key="ice"
-  >
-    ice
-  </li>
+  <ul>
+    <li
+      key="1 cup strawberries"
+    >
+      1 cup strawberries
+    </li>
+    <li
+      key="1/2 cup pineapple"
+    >
+      1/2 cup pineapple
+    </li>
+    <li
+      key="1 banana"
+    >
+      1 banana
+    </li>
+    <li
+      key="2 cups orange juice"
+    >
+      2 cups orange juice
+    </li>
+    <li
+      key="1/2 cup greek yogurt"
+    >
+      1/2 cup greek yogurt
+    </li>
+    <li
+      key="1 cup spinach, optional"
+    >
+      1 cup spinach, optional
+    </li>
+    <li
+      key="1 tablespoon chia or flaxseed, optional"
+    >
+      1 tablespoon chia or flaxseed, optional
+    </li>
+    <li
+      key="ice"
+    >
+      ice
+    </li>
+  </ul>
 </div>
 `;

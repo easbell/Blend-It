@@ -14,17 +14,19 @@ export class IngredientContainer extends Component {
     return this.state.categories.map(category => {
       return (
         <div key={category}>
-          <h3>{category}</h3>
-          { this.props.ingredients[category].map(ingredient => {
-            return (
-              <Ingredient 
-                ingredient={ingredient} 
-                key={ingredient} 
-                chooseIngredients={this.props.chooseIngredients}
-                removeIngredient={this.props.removeIngredient}
-              />
-            )
-          }).slice(0, 6) }
+          <h3 className="ingredient-category">{category}</h3>
+          <div className="ingredients">
+            { this.props.ingredients[category].map(ingredient => {
+              return (
+                <Ingredient 
+                  ingredient={ingredient} 
+                  key={ingredient} 
+                  chooseIngredients={this.props.chooseIngredients}
+                  removeIngredient={this.props.removeIngredient}
+                />
+              )
+            })}
+          </div>
         </div>)
     })
   }

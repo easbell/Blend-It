@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Ingredient should match a snapshot with all data passed in 1`] = `
-<div>
+<div
+  className="ingredient-list"
+>
   <h4
     className="not-selected"
     onClick={[Function]}

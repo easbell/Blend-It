@@ -8,11 +8,8 @@ exports[`App should match a snapshot with all data passed in 1`] = `
     Blend It!
   </h1>
   <h2>
-    Choose Your Ingredients
+    Choose Your Ingredients:
   </h2>
-  <ChosenIngredientList
-    ingredients={Array []}
-  />
   <SmoothieContainer
     chosenIngredients={Array []}
     smoothies={Array []}

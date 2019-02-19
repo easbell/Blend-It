@@ -24,7 +24,7 @@ export default class Ingredient extends Component {
     const {isChosen} = this.state
     const {ingredient} = this.props
     return ( 
-      <div>
+      <div className="ingredient-list">
         {!isChosen && 
           <h4 className='not-selected' onClick={this.selectIngredient}>
             {ingredient}
