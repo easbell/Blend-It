@@ -2,8 +2,8 @@ import React from 'react';
 
 export default function ChosenIngredientList(props){
   return(
-    <div>
-      <h3>
+    <div className="chosen-ingredients">
+      <h3>Selected Ingredients: </h3>
         {
           props.ingredients.map(chosen => {
             return (
@@ -11,7 +11,6 @@ export default function ChosenIngredientList(props){
               )
           })
         }
-      </h3>
     </div>
   )
 }

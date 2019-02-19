@@ -7,18 +7,6 @@ exports[`SmoothieContainer should match a snapshot with all data passed in 1`] =
     img="images/babe-ruth.jpg"
     key="1"
     name="Babe Ruth Strawberry Pineapple Banana Smoothie"
-    recipe={
-      Array [
-        "1 cup strawberries",
-        "1/2 cup pineapple",
-        "1 banana",
-        "2 cups orange juice",
-        "1/2 cup greek yogurt",
-        "1 cup spinach, optional",
-        "1 tablespoon chia or flaxseed, optional",
-        "ice",
-      ]
-    }
     showRecipe={[Function]}
   />
   <Smoothie
@@ -26,17 +14,6 @@ exports[`SmoothieContainer should match a snapshot with all data passed in 1`] =
     img="images/cherry-almond.jpg"
     key="2"
     name="Cherry Almond Smoothie"
-    recipe={
-      Array [
-        "1 cup almond milk",
-        "1 cup cherries",
-        "3 tablespoons raw almonds",
-        "2 tablespoons raw honey",
-        "1 teaspoon cinnamon",
-        "1/2 teaspoon almond extract",
-        "1 tablespoon coconut oil",
-      ]
-    }
     showRecipe={[Function]}
   />
 </div>

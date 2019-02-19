@@ -1,9 +1,23 @@
 .ingredients-container {
+  display: -webkit-flex;
   display: flex;
+  max-width: 50rem;
+  height: 25rem;
+  margin: 20px auto;
+  -webkit-justify-content: center;
   justify-content: space-around;
+  background: rgba(119, 29, 65, 6.2);
+  box-shadow: -2px 2px 3px #6c1b39;
+  border-radius: 15px;
 }
 
-h3 {
+.ingredient-category {
   font-size: 24px;
+  text-decoration: underline;
   color: white;
+}
+
+.ingredients {
+  max-height: 18rem;
+  overflow: scroll;
 }
