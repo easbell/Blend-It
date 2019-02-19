@@ -11,7 +11,6 @@ export default class Ingredient extends Component {
   selectIngredient = () => {
     const {isChosen} = this.state
     const {ingredient, chooseIngredients, removeIngredient} = this.props
-
     if (isChosen === true) {
       this.setState({isChosen: !isChosen}, removeIngredient(ingredient))
     } else if (isChosen === false) {

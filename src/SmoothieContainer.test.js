@@ -65,6 +65,8 @@ describe('SmoothieContainer', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
+  
+
 });
 
 
