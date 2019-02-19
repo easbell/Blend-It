@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { Component } from 'react';
+import './Recipe.css';
 
 export default function Recipe(props) {
   return (
-    <div>
+    <div className='recipe-details'>
+        <h4>Servings: {props.chosenRecipe.servings}</h4>
+        <h4><a href={props.chosenRecipe.source}>Source</a></h4>
       {
-        props.recipe.map(steps => {
+        props.chosenRecipe.recipe.map(steps => {
           return (
-            <li>{steps}</li>
+              <li>{steps}</li>
           )
         })
       }

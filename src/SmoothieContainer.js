@@ -13,7 +13,7 @@ export default class SmoothieContainer extends Component {
 
   showRecipe = (smoothie) => {
     const {showRecipe, chosenSmoothie} = this.state;
-    this.setState({showRecipe: !showRecipe, chosenSmoothie: smoothie.id})
+    this.setState({showRecipe: !showRecipe, chosenSmoothie: smoothie.id});
   }
 
   render = () => {
@@ -30,7 +30,6 @@ export default class SmoothieContainer extends Component {
               showRecipe={this.showRecipe}
               name={smoothie.name}
               img={smoothie.img}
-              recipe={smoothie.recipe}
               key={smoothie.id}
               id={smoothie.id}
               />
@@ -43,11 +42,10 @@ export default class SmoothieContainer extends Component {
               showRecipe={this.showRecipe}
               name={smoothieRecipe.name}
               img={smoothieRecipe.img}
-              recipe={smoothieRecipe.recipe}
               key={smoothieRecipe.id}
               id={smoothieRecipe.id}
             />
-            <Recipe recipe={smoothieRecipe.recipe}/>
+            <Recipe chosenRecipe={smoothieRecipe}/>
           </div>
         }
       </div>
