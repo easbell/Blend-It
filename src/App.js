@@ -86,7 +86,9 @@ class App extends Component {
           removeIngredient={this.removeIngredient}
           />
         }
-        <ChosenIngredientList ingredients={this.state.chosenIngredients} />
+        {this.state.chosenIngredients.length > 0 &&
+          <ChosenIngredientList ingredients={this.state.chosenIngredients} />
+        }
         <SmoothieContainer 
           smoothies={this.state.smoothies}
           chosenIngredients={this.state.chosenIngredients}
