@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import SmoothieContainer from './SmoothieContainer.js'
 import {IngredientContainer} from './IngredientContainer.js'
 import ChosenIngredientList from './ChosenIngredientList.js'
-import './App.css';
 
 class App extends Component {
   constructor() {
