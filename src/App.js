@@ -85,7 +85,6 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.state)
     return (
       <div className="App">
         {this.state.error && <p>{this.state.error}</p>}

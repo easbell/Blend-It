@@ -7,7 +7,7 @@ export default function ChosenIngredientList(props){
         {
           props.ingredients.map(chosen => {
             return (
-              <p>{chosen}</p>
+              <p key={chosen}>{chosen}</p>
               )
           })
         }

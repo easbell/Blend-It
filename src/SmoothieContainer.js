@@ -25,40 +25,40 @@ export default class SmoothieContainer extends Component {
     })
     return (
       <div>
-      <h2>Matching Smoothie Recipes:</h2>
-        <div className="all-smoothies">
-        {this.props.smoothies.length === 0 &&
+        <h2>Matching Smoothie Recipes:</h2>
+        {!this.props.smoothies.length &&
           <div className="broaden-search">
-            <h2>Sorry, that's too specific!</h2>
+            <h2>Oops! We didn't find any matching smoothies.</h2>
             <h2>Please broaden your search.</h2>
           </div>
-        }
-        {!showRecipe &&
-          this.props.smoothies.map(smoothie => {
-            return (
-              <Smoothie
-                showRecipe={this.showRecipe}
-                name={smoothie.name}
-                img={smoothie.img}
-                key={smoothie.id}
-                id={smoothie.id}
-              />
+        } 
+        <div className="all-smoothies">
+          {!showRecipe &&
+            this.props.smoothies.map(smoothie => {
+              return (
+                <Smoothie
+                  showRecipe={this.showRecipe}
+                  name={smoothie.name}
+                  img={smoothie.img}
+                  key={smoothie.id}
+                  id={smoothie.id}
+                />
               )
             })
           }
-        {showRecipe && 
-          <div className="smoothie-container" onClick={this.showRecipe}>
-            <Smoothie 
-              showRecipe={this.showRecipe}
-              name={smoothieRecipe.name}
-              img={smoothieRecipe.img}
-              key={smoothieRecipe.id}
-              id={smoothieRecipe.id}
-            />
-            <Recipe chosenRecipe={smoothieRecipe}/>
-            <h4 className="back-button"><i className="fas fa-chevron-circle-left"></i>Back to Results</h4>
-          </div>
-        }
+          {showRecipe && 
+            <div className="smoothie-container" onClick={this.showRecipe}>
+              <Smoothie 
+                showRecipe={this.showRecipe}
+                name={smoothieRecipe.name}
+                img={smoothieRecipe.img}
+                key={smoothieRecipe.id}
+                id={smoothieRecipe.id}
+              />
+              <Recipe chosenRecipe={smoothieRecipe}/>
+              <h4 className="back-button"><i className="fas fa-chevron-circle-left"></i>Back to Results</h4>
+            </div>
+          }
         </div>
       </div>
     )
