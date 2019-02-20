@@ -12,7 +12,7 @@ class App extends Component {
       ingredients: {},
       error: '',
       chosenIngredients: [],
-      filteredSmoothies: []
+      filteredSmoothies: [],
     }
   }
   
@@ -70,6 +70,15 @@ class App extends Component {
     this.setState({ filteredSmoothies: matching });
   }
 
+  resetSearch = () => {
+    if(this.state.chosenIngredients) {
+      this.setState({
+        chosenIngredients: [],
+        filteredSmoothies: this.state.smoothies        
+      }); 
+    }
+  }
+
   render() {
     return (
       <div className="App">
@@ -78,13 +87,17 @@ class App extends Component {
         <h2>Choose Your Ingredients:</h2>
         {Object.keys(this.state.ingredients).length > 0 && 
           <IngredientContainer 
-          ingredients={this.state.ingredients} 
+          ingredients={this.state.ingredients}
+          chosenIngredients={this.state.chosenIngredients} 
           chooseIngredients={this.chooseIngredients}
           removeIngredient={this.removeIngredient}
           />
         }
         {this.state.chosenIngredients.length > 0 &&
-          <ChosenIngredientList ingredients={this.state.chosenIngredients} />
+          <ChosenIngredientList 
+            ingredients={this.state.chosenIngredients}
+            resetButton={this.resetSearch}
+          />
         }
         <SmoothieContainer 
           smoothies={this.state.filteredSmoothies}

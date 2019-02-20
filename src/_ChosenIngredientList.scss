@@ -20,3 +20,20 @@
   font-weight: 400;
   color: #fff;
 }
+
+button {
+  border: 2px solid;
+  border-radius: 15px;
+  background: none;
+  cursor: pointer;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bolder;
+  color: #e8db7d;
+}
+
+button:hover {
+  background: #558c8c;
+  color: #2f3d3d;
+}
