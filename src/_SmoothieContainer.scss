@@ -1,3 +1,5 @@
+// Area for all smoothies
+
 .smoothie-container {
   display: inline-grid;
   grid-template-columns: 25rem 25rem;
@@ -20,3 +22,12 @@
   max-width: 120rem;
 }
 
+// Styling for return to results button
+.back-button {
+  color: #fff;
+  cursor: pointer;
+}
+
+.back-button i {
+  margin-right: 5px;
+}

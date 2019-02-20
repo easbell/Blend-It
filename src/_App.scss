@@ -4,7 +4,6 @@ body {
   font-family: Open Sans Condensed;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #231123;
 }
 
 .App {
@@ -34,7 +33,6 @@ body {
 h2 {
   color: $title-color-teal;
   letter-spacing: 2px;
-  font-size: 32px;
-  margin-top: 3rem;
+  font-size: 1.7rem;
   text-shadow: -1px 2px 3px $shadow-teal;
 }

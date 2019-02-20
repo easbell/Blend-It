@@ -1,3 +1,5 @@
+// Container for all ingredients
+
 .ingredients-container {
   display: -webkit-flex;
   display: flex;
@@ -12,7 +14,7 @@
 }
 
 .ingredient-category {
-  font-size: 24px;
+  font-size: 1.4rem;
   text-decoration: underline;
   letter-spacing: 3px;
   color: $smoothie-white;
