@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 export default class Smoothie extends Component {
+  
   expandRecipe = () => {
     const {showRecipe} = this.props
     showRecipe(this.props)
