@@ -13,6 +13,7 @@ class App extends Component {
       error: '',
       chosenIngredients: [],
       filteredSmoothies: [],
+      ingredientsHidden: false,
     }
   }
   
@@ -79,29 +80,37 @@ class App extends Component {
     }
   }
 
+  hideIngredients = () => {
+    this.setState({ ingredientsHidden: !this.state.ingredientsHidden });
+  }
+
   render() {
     return (
       <div className="App">
         {this.state.error && <p>{this.state.error}</p>}
         <h1>Blend It!</h1>
-        <h2>Choose Your Ingredients:</h2>
-        {Object.keys(this.state.ingredients).length > 0 && 
-          <IngredientContainer 
-          ingredients={this.state.ingredients}
-          chosenIngredients={this.state.chosenIngredients} 
-          chooseIngredients={this.chooseIngredients}
-          removeIngredient={this.removeIngredient}
-          />
-        }
-        {this.state.chosenIngredients.length > 0 &&
-          <ChosenIngredientList 
-            ingredients={this.state.chosenIngredients}
-            resetButton={this.resetSearch}
-          />
-        }
+          {!this.state.ingredientsHidden &&
+            Object.keys(this.state.ingredients).length > 0 && 
+            <div>
+              <h2>Choose Your Ingredients:</h2>
+              <IngredientContainer 
+              ingredients={this.state.ingredients}
+              chosenIngredients={this.state.chosenIngredients} 
+              chooseIngredients={this.chooseIngredients}
+              removeIngredient={this.removeIngredient}
+              />
+            </div>
+          }
+          {this.state.chosenIngredients.length > 0 &&
+            <ChosenIngredientList 
+              ingredients={this.state.chosenIngredients}
+              resetButton={this.resetSearch}
+            />
+          }
         <SmoothieContainer 
           smoothies={this.state.filteredSmoothies}
           chosenIngredients={this.state.chosenIngredients}
+          hideIngredients={this.hideIngredients}
         />
       </div>
     )
