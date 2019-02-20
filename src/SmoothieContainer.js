@@ -12,8 +12,10 @@ export default class SmoothieContainer extends Component {
   }
 
   showRecipe = (smoothie) => {
+    const {hideIngredients} = this.props
     const {showRecipe, chosenSmoothie} = this.state;
     this.setState({showRecipe: !showRecipe, chosenSmoothie: smoothie.id});
+    hideIngredients()
   }
 
   render = () => {
