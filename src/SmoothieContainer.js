@@ -35,17 +35,17 @@ export default class SmoothieContainer extends Component {
           this.props.smoothies.map(smoothie => {
             return (
               <Smoothie
-              showRecipe={this.showRecipe}
-              name={smoothie.name}
-              img={smoothie.img}
-              key={smoothie.id}
-              id={smoothie.id}
+                showRecipe={this.showRecipe}
+                name={smoothie.name}
+                img={smoothie.img}
+                key={smoothie.id}
+                id={smoothie.id}
               />
               )
             })
           }
         {showRecipe && 
-          <div className="smoothie-container">
+          <div className="smoothie-container" onClick={this.showRecipe}>
             <Smoothie 
               showRecipe={this.showRecipe}
               name={smoothieRecipe.name}
@@ -54,6 +54,7 @@ export default class SmoothieContainer extends Component {
               id={smoothieRecipe.id}
             />
             <Recipe chosenRecipe={smoothieRecipe}/>
+            <h4 className="back-button"><i className="fas fa-chevron-circle-left"></i>Back to Results</h4>
           </div>
         }
       </div>
