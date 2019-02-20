@@ -104,12 +104,25 @@ describe('App', () => {
     expect(wrapper.state("chosenIngredients")).toEqual([])
   });
 
-  it('should reset state to default state at any time', () => {
-    expect(wrapper.state("chosenIngredients")).toEqual([])
-    expect(wrapper.state("filteredSmoothies")).toEqual([])
+  it('should update state when filterSmoothies is called', () => {
+    wrapper.state.chosenIngredients = []
+    wrapper.instance().filterSmoothies();
+    expect(wrapper.state("filteredSmoothies")).toEqual([]);
+  });
+
+  it('should reset state when resetSearch is invoked', () => {
+    wrapper.state.chosenIngredients = ["strawberries"]
+    wrapper.state.filteredSmoothies = [mockSmoothies[0]]
+
     wrapper.instance().resetSearch()
     expect(wrapper.state("chosenIngredients")).toEqual([])
     expect(wrapper.state("filteredSmoothies")).toEqual([])
+  });
+
+  it('should update state when hideIngredients is invoked', () => {
+    expect(wrapper.state("ingredientsHidden")).toEqual(false)
+    wrapper.instance().hideIngredients();
+    expect(wrapper.state("ingredientsHidden")).toEqual(true)
   });
 });
 
