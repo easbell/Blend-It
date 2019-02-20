@@ -18,7 +18,8 @@ export class IngredientContainer extends Component {
           <div className="ingredients">
             { this.props.ingredients[category].map(ingredient => {
               return (
-                <Ingredient 
+                <Ingredient
+                  isChosen={this.props.chosenIngredients.includes(ingredient)} 
                   ingredient={ingredient} 
                   key={ingredient} 
                   chooseIngredients={this.props.chooseIngredients}

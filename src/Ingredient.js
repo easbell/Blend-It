@@ -1,35 +1,26 @@
 import React, {Component} from 'react';
 
 export default class Ingredient extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      isChosen: false
-    }
-  }
 
   selectIngredient = () => {
-    const {isChosen} = this.state
-    const {ingredient, chooseIngredients, removeIngredient} = this.props
+    const {ingredient, chooseIngredients, removeIngredient, isChosen} = this.props
     if (isChosen === true) {
-      this.setState({isChosen: !isChosen}, removeIngredient(ingredient))
+      removeIngredient(ingredient)
     } else if (isChosen === false) {
-      this.setState({isChosen: !isChosen}, chooseIngredients(ingredient))
-    }
-    
+      chooseIngredients(ingredient)
+    }  
   }
 
   render() {
-    const {isChosen} = this.state
     const {ingredient} = this.props
     return ( 
       <div className="ingredient-list">
-        {!isChosen && 
+        {!this.props.isChosen && 
           <h4 className='not-selected' onClick={this.selectIngredient}>
             {ingredient}
           </h4>
         }
-        {isChosen && 
+        {this.props.isChosen && 
           <h4 className='selected' onClick={this.selectIngredient}>
             {ingredient}
           </h4>
