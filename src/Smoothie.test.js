@@ -38,7 +38,6 @@ describe('Smoothie', () => {
       showRecipe={showRecipeMock}
       name={mockSmoothie.name}
       img={mockSmoothie.img}
-      recipe={mockSmoothie.recipe}
       key={mockSmoothie.id}
       id={mockSmoothie.id}
     />
@@ -48,15 +47,8 @@ describe('Smoothie', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it('should should have proper default states', () => {
-    expect(wrapper.state()).toEqual({isSelected: false})
-  });
-
   it('should change the state of isSelected and invoke showRecipe when smoothie is clicked', () => {
-    expect(wrapper.state('isSelected')).toEqual(false);
     wrapper.find('.smoothie').simulate('click');
-    expect(wrapper.state('isSelected')).toEqual(true);
-
     expect(showRecipeMock).toBeCalled();
   })
   
