@@ -5,6 +5,7 @@ import { shallow } from 'enzyme';
 const mockIngredient = 'Banana';
 const chooseIngredientsMock = jest.fn();
 const removeIngredientMock = jest.fn();
+const isChosenMock = false;
 
 describe('Ingredient', () => {
   let wrapper;
@@ -12,6 +13,7 @@ describe('Ingredient', () => {
   beforeEach(() => {
     wrapper = shallow(
       <Ingredient 
+        isChosen={isChosenMock}
         ingredient={mockIngredient} 
         key={mockIngredient} 
         chooseIngredients={chooseIngredientsMock}
@@ -24,21 +26,8 @@ describe('Ingredient', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it('should have proper default states', () => {
-    expect(wrapper.state()).toEqual({isChosen: false})
-  });
-
-  it('should change state and call proper function when selectIngredient is called', () => {
-    expect(wrapper.state()).toEqual({isChosen: false});
+  it('should fire off function when clicked', () => {
     wrapper.find('.not-selected').simulate('click');
-    expect(wrapper.state()).toEqual({isChosen: true});
     expect(chooseIngredientsMock).toBeCalled();
   });
-
-  // it('should toggle state back and call proper function when selectIngredient is called again', () => {
-  //   expect(wrapper.state()).toEqual({isChosen: true});
-  //   wrapper.find('.selected').simulate('click');
-  //   expect(wrapper.state()).toEqual({isChosen: false});
-  //   expect(removeIngredientMock).toBeCalled();
-  // });
 })

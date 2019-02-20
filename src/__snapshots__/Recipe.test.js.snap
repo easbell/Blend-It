@@ -8,13 +8,6 @@ exports[`Recipe should match a snapshot with all data passed in 1`] = `
     Servings: 
     4
   </h4>
-  <h4>
-    <a
-      href="https://www.modernhoney.com/6-healthy-superfood-smoothies/"
-    >
-      Source
-    </a>
-  </h4>
   <ul>
     <li
       key="1 cup strawberries"
@@ -57,5 +50,13 @@ exports[`Recipe should match a snapshot with all data passed in 1`] = `
       ice
     </li>
   </ul>
+  <h4>
+    <a
+      href="https://www.modernhoney.com/6-healthy-superfood-smoothies/"
+      target="_blank"
+    >
+      Source Link
+    </a>
+  </h4>
 </div>
 `;

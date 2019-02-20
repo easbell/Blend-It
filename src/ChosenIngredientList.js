@@ -12,7 +12,7 @@ export default function ChosenIngredientList(props){
           })
         }
         <div>
-          <button onClick={props.resetButton}>Clear Selections</button>
+          <button className="button" onClick={props.resetButton}>Clear Selections</button>
         </div>
     </div>
   )
