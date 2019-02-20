@@ -24,6 +24,6 @@ This was an opportunity to utilize the React framework, as well as, fetch API, t
 - HTML
 
 ### Screen Grabs
-![screen shot 2019-02-20 at 3 36 47 pm](https://user-images.githubusercontent.com/34728115/53129746-a59b6f00-3525-11e9-90da-56e5dbaf52d9.png)
+![localhost_3000_ 1](https://user-images.githubusercontent.com/34728115/53129811-d4194a00-3525-11e9-9100-1f375cff9dcb.png)
 
 ![localhost_3000_](https://user-images.githubusercontent.com/34728115/53129726-961c2600-3525-11e9-9159-1782198e23cb.png)
