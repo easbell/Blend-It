@@ -11,7 +11,8 @@ class App extends Component {
       smoothies: [],
       ingredients: {},
       error: '',
-      chosenIngredients: []
+      chosenIngredients: [],
+      filteredSmoothies: []
     }
   }
   
@@ -20,7 +21,8 @@ class App extends Component {
     .then(response => response.json())
     .then(result => {
       this.setState({
-        smoothies: result.smoothies
+        smoothies: result.smoothies,
+        filteredSmoothies: result.smoothies
       })
     })
     .catch(error => {
@@ -38,34 +40,34 @@ class App extends Component {
       })
   }
 
-  componentDidUpdate(prevProps, prevState) {
-    if (prevState.chosenIngredients.length !== this.state.chosenIngredients.length) {
-      this.filterSmoothies();
-    } 
-  }
-
   chooseIngredients = (ingredient) => {
     const updatedIngredients = [ ...this.state.chosenIngredients, ingredient]
-    this.setState({ chosenIngredients: updatedIngredients })
+    this.setState({ chosenIngredients: updatedIngredients }, () => {
+      this.filterSmoothies();
+    })
   }
 
   removeIngredient = (ingredient) => {
     const updatedIngredients = this.state.chosenIngredients.filter(chosenIngredient => {
       return chosenIngredient !== ingredient
     })
-    this.setState({ chosenIngredients: updatedIngredients })
+    this.setState({ chosenIngredients: updatedIngredients, filteredSmoothies: this.state.smoothies }, () => {
+      if(this.state.chosenIngredients.length) {
+        this.filterSmoothies();
+      }
+    })
   }
 
   filterSmoothies = () => {
     const { chosenIngredients } = this.state;
-    const matching = this.state.smoothies.filter(smoothie => {
+    const matching = this.state.filteredSmoothies.filter(smoothie => {
       let matched = false;
        chosenIngredients.forEach(chosen=> {
           matched = smoothie.ingredients.includes(chosen);
        })
        return matched;
     })
-    this.setState({ smoothies: matching });
+    this.setState({ filteredSmoothies: matching });
   }
 
   render() {
@@ -85,7 +87,7 @@ class App extends Component {
           <ChosenIngredientList ingredients={this.state.chosenIngredients} />
         }
         <SmoothieContainer 
-          smoothies={this.state.smoothies}
+          smoothies={this.state.filteredSmoothies}
           chosenIngredients={this.state.chosenIngredients}
         />
       </div>
