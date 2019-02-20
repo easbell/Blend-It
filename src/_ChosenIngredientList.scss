@@ -1,22 +1,24 @@
+// Section to house selected ingredients
 .chosen-ingredients {
   background: $container-background-color;
-  box-shadow: -2px 2px 3px #6c1b39;
+  box-shadow: $container-box-shadow;
   width: 25rem;
-  border-radius: 15px;
+  border-radius: $container-border-radius;
   margin: 10px auto;
 }
 
+// Title
 .chosen-ingredients h3 {
   color: $title-color-teal;
   text-shadow: -1px 2px 3px #2f3d3d;
-  font-size: 24px;
+  font-size: 1.4rem;
   margin-bottom: 10px;
 }
 
 .chosen-ingredients p {
   display: inline;
   margin: 5px 10px;
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: 400;
   color: #fff;
 }
@@ -26,14 +28,13 @@ button {
   border-radius: 15px;
   background: none;
   cursor: pointer;
-  font-size: 15px;
+  font-size: .8rem;
   margin-top: 10px;
   margin-bottom: 10px;
   font-weight: bolder;
   color: $smoothie-yellow;
-}
-
-button:hover {
-  background: $title-color-teal;
-  color: $shadow-teal;
+  &:hover {
+    background: $title-color-teal;
+    color: $shadow-teal;
+  }
 }
