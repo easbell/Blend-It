@@ -1,5 +1,5 @@
 import React from 'react';
-import IngredientContainer from './IngredientContainer.js';
+import IngredientContainer from './IngredientContainer';
 import { shallow, mount } from 'enzyme';
 
 const mockIngredients = {
@@ -38,6 +38,8 @@ const mockIngredients = {
   ]
 }
 
+const mockArray = [];
+
 const chooseIngredientsMock = jest.fn();
 const removeIngredientMock = jest.fn();
 
@@ -45,9 +47,10 @@ describe('IngredientContainer', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = mount(
+    wrapper = shallow(
       <IngredientContainer 
         ingredients={mockIngredients} 
+        chosenIngredients={mockArray}
         chooseIngredients={chooseIngredientsMock}
         removeIngredient={removeIngredientMock} 
       />
@@ -55,6 +58,7 @@ describe('IngredientContainer', () => {
   }); 
 
   it('should match a snapshot with all data passed in', () => {
+    console.log(wrapper)
     expect(wrapper).toMatchSnapshot();
   });
 
