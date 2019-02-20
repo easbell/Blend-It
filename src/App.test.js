@@ -104,11 +104,13 @@ describe('App', () => {
     expect(wrapper.state("chosenIngredients")).toEqual([])
   });
 
-  // it('should only show smoothies which match each chosen ingredient', () => {
-  //   expect(wrapper.state("chosenIngredients")).toEqual(["oats"])
-  //   wrapper.instance().filterSmoothies()
-  //   expect(wrapper.state("smoothies").length).toEqual(3)
-  // });
+  it('should reset state to default state at any time', () => {
+    expect(wrapper.state("chosenIngredients")).toEqual([])
+    expect(wrapper.state("filteredSmoothies")).toEqual([])
+    wrapper.instance().resetSearch()
+    expect(wrapper.state("chosenIngredients")).toEqual([])
+    expect(wrapper.state("filteredSmoothies")).toEqual([])
+  });
 });
 
 

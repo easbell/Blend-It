@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ChosenIngredientList should match a snapshot with all data passed in 1`] = `
+<div
+  className="chosen-ingredients"
+>
+  <h3>
+    Selected Ingredients: 
+  </h3>
+  <p>
+    Banana
+  </p>
+  <div>
+    <button
+      className="button"
+      onClick={[MockFunction]}
+    >
+      Clear Selections
+    </button>
+  </div>
+</div>
+`;
