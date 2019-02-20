@@ -85,7 +85,6 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.state)
     return (
       <div className="App">
         {this.state.error && <p>{this.state.error}</p>}
@@ -96,10 +95,10 @@ class App extends Component {
               <h2 className="tag-line">Pick your ingredients, find your smoothie.</h2>
               <h2>Choose Your Ingredients:</h2>
               <IngredientContainer 
-              ingredients={this.state.ingredients}
-              chosenIngredients={this.state.chosenIngredients} 
-              chooseIngredients={this.chooseIngredients}
-              removeIngredient={this.removeIngredient}
+                ingredients={this.state.ingredients}
+                chosenIngredients={this.state.chosenIngredients} 
+                chooseIngredients={this.chooseIngredients}
+                removeIngredient={this.removeIngredient}
               />
             </div>
           }

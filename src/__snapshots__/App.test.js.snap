@@ -4,14 +4,13 @@ exports[`App should match a snapshot with all data passed in 1`] = `
 <div
   className="App"
 >
-  <h1>
+  <h1
+    className="blend-it"
+  >
     Blend It!
   </h1>
-  <h2>
-    Choose Your Ingredients:
-  </h2>
   <SmoothieContainer
-    chosenIngredients={Array []}
+    hideIngredients={[Function]}
     smoothies={Array []}
   />
 </div>

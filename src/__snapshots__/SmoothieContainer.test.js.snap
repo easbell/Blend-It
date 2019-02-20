@@ -2,19 +2,26 @@
 
 exports[`SmoothieContainer should match a snapshot with all data passed in 1`] = `
 <div>
-  <Smoothie
-    id={1}
-    img="images/babe-ruth.jpg"
-    key="1"
-    name="Babe Ruth Strawberry Pineapple Banana Smoothie"
-    showRecipe={[Function]}
-  />
-  <Smoothie
-    id={2}
-    img="images/cherry-almond.jpg"
-    key="2"
-    name="Cherry Almond Smoothie"
-    showRecipe={[Function]}
-  />
+  <h2>
+    Matching Smoothie Recipes:
+  </h2>
+  <div
+    className="all-smoothies"
+  >
+    <Smoothie
+      id={1}
+      img="images/babe-ruth.jpg"
+      key="1"
+      name="Babe Ruth Strawberry Pineapple Banana Smoothie"
+      showRecipe={[Function]}
+    />
+    <Smoothie
+      id={2}
+      img="images/cherry-almond.jpg"
+      key="2"
+      name="Cherry Almond Smoothie"
+      showRecipe={[Function]}
+    />
+  </div>
 </div>
 `;

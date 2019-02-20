@@ -1,17 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Smoothie should match a snapshot with all data passed in 1`] = `
-<div>
-  <div
-    className="smoothie"
-    onClick={[Function]}
+<div
+  className="smoothie smoothie-in-list"
+  onClick={[Function]}
+>
+  <h3
+    className="smoothie-list-name"
   >
-    <h3>
-      Babe Ruth Strawberry Pineapple Banana Smoothie
-    </h3>
-    <img
-      src="images/babe-ruth.jpg"
-    />
-  </div>
+    Babe Ruth Strawberry Pineapple Banana Smoothie
+  </h3>
+  <img
+    src="images/babe-ruth.jpg"
+  />
 </div>
 `;
