@@ -12,3 +12,11 @@
   margin: 21px;
   padding: 48px;
 }
+
+.all-smoothies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 120rem;
+}
+
