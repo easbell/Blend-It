@@ -85,6 +85,7 @@ class App extends Component {
   }
 
   render() {
+    console.log(this.state)
     return (
       <div className="App">
         {this.state.error && <p>{this.state.error}</p>}
@@ -102,7 +103,8 @@ class App extends Component {
               />
             </div>
           }
-          {this.state.chosenIngredients.length > 0 &&
+          {!this.state.ingredientsHidden &&
+            this.state.chosenIngredients.length > 0 &&
             <ChosenIngredientList 
               ingredients={this.state.chosenIngredients}
               resetButton={this.resetSearch}
@@ -110,7 +112,6 @@ class App extends Component {
           }
         <SmoothieContainer 
           smoothies={this.state.filteredSmoothies}
-          chosenIngredients={this.state.chosenIngredients}
           hideIngredients={this.hideIngredients}
         />
       </div>
