@@ -1,8 +1,18 @@
-.recipe-stuff {
-  display: inline-flex;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 0 0 2.5rem;
+  text-align: left
 }
 
-img {
-  width: 10rem;
-  height: 10rem;
-} 
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.recipe-details {
+  color: #fff;
+  text-shadow: -1px 2px 3px #2f3d3d;
+  font-size: 1.5rem;
+  padding-top: 2rem;
+}
