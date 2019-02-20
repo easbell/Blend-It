@@ -89,7 +89,7 @@ describe('App', () => {
   });
 
   it('should have proper default states', () => {
-    expect(wrapper.state()).toEqual({smoothies: [], ingredients: {}, error: '', chosenIngredients: []})
+    expect(wrapper.state()).toEqual({smoothies: [], ingredients: {}, error: '', chosenIngredients: [], filteredSmoothies: []})
   })
 
   it('should update the chosen ingredients when ingredient is selected', () => {

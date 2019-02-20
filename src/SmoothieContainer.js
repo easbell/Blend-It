@@ -23,6 +23,12 @@ export default class SmoothieContainer extends Component {
     })
     return (
       <div>
+        {this.props.smoothies.length === 0 &&
+          <div className="broaden-search">
+            <h2>Sorry, that's too specific!</h2>
+            <h2>Please broaden your search.</h2>
+          </div>
+        }
         {!showRecipe &&
           this.props.smoothies.map(smoothie => {
             return (
