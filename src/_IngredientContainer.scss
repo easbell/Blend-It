@@ -14,10 +14,17 @@
 .ingredient-category {
   font-size: 24px;
   text-decoration: underline;
+  letter-spacing: 3px;
   color: $smoothie-white;
 }
 
 .ingredients {
   max-height: 18rem;
   overflow: scroll;
+  box-shadow: inset 4px 4px 30px #3b081e;
+  border-radius: 5px;
+  letter-spacing: 1.3px;
+  background-color: #5e0e33;
+  width: 9rem;
+  padding: 7px;
 }

@@ -89,10 +89,11 @@ class App extends Component {
     return (
       <div className="App">
         {this.state.error && <p>{this.state.error}</p>}
-        <h1>Blend It!</h1>
+        <h1 className="blend-it">Blend It!</h1>
           {!this.state.ingredientsHidden &&
             Object.keys(this.state.ingredients).length > 0 && 
             <div>
+              <h2 className="tag-line">Pick your ingredients, find your smoothie.</h2>
               <h2>Choose Your Ingredients:</h2>
               <IngredientContainer 
               ingredients={this.state.ingredients}

@@ -13,7 +13,7 @@ export default class SmoothieContainer extends Component {
 
   showRecipe = (smoothie) => {
     const {hideIngredients} = this.props
-    const {showRecipe, chosenSmoothie} = this.state;
+    const {showRecipe} = this.state;
     this.setState({showRecipe: !showRecipe, chosenSmoothie: smoothie.id});
     hideIngredients()
   }
@@ -25,6 +25,8 @@ export default class SmoothieContainer extends Component {
     })
     return (
       <div>
+      <h2>Matching Smoothie Recipes:</h2>
+        <div className="all-smoothies">
         {this.props.smoothies.length === 0 &&
           <div className="broaden-search">
             <h2>Sorry, that's too specific!</h2>
@@ -56,6 +58,7 @@ export default class SmoothieContainer extends Component {
             <Recipe chosenRecipe={smoothieRecipe}/>
           </div>
         }
+        </div>
       </div>
     )
   }
