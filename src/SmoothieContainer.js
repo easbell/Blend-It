@@ -37,7 +37,7 @@ export default class SmoothieContainer extends Component {
             })
           }
         {showRecipe && 
-          <div>
+          <div className="smoothie-container">
             <Smoothie 
               showRecipe={this.showRecipe}
               name={smoothieRecipe.name}

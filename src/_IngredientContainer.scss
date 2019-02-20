@@ -6,9 +6,9 @@
   margin: 20px auto;
   -webkit-justify-content: center;
   justify-content: space-around;
-  background: rgba(119, 29, 65, 6.2);
-  box-shadow: -2px 2px 3px #6c1b39;
-  border-radius: 15px;
+  background: $container-background-color;
+  box-shadow: $container-box-shadow;
+  border-radius: $container-border-radius;
 }
 
 .ingredient-category {

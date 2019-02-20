@@ -1,0 +1,9 @@
+.smoothie-container {
+  display: inline-grid;
+  grid-template-columns: 25rem 25rem;
+  background: $container-background-color;
+  box-shadow: $container-box-shadow;
+  border-radius: $container-border-radius;
+  padding: 1.4rem;
+  margin: 2rem;
+}
