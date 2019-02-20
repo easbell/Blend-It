@@ -18,14 +18,14 @@ h1 {
   padding: 25px;
   margin-top: 0px;
   margin-bottom: 5px;
-  color: #e8db7d;
-  text-shadow: 4px 5px 4px #2f3d3d;
+  color: $smoothie-yellow;
+  text-shadow: 4px 5px 4px $shadow-teal;
 }
 
 h2 {
-  color: #558C8C;
+  color: $title-color-teal;
   letter-spacing: 2px;
   font-size: 32px;
   margin: 0;
-  text-shadow: -1px 2px 3px #2f3d3d;
+  text-shadow: -1px 2px 3px $shadow-teal;
 }

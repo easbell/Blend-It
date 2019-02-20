@@ -1,5 +1,5 @@
 .selected {
-  background-color: #E8DB7D;
+  background-color: $smoothie-yellow;
   color: #000;
   padding: 10px;
   cursor: pointer;
@@ -9,6 +9,6 @@
 .not-selected {
   padding: 10px;
   cursor: pointer;
-  color: #fff;
+  color: $smoothie-white;
   text-shadow: -1px 2px 3px #2f3d3d;
 }
