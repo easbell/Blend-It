@@ -1,7 +1,7 @@
 # Blend It
 An app to find a smoothie recipe based on ingredients you want to include.
 
-## [See the App Live, Here](https://easbell.github.io/Blend-It/)
+### [See the App Live, Here](https://easbell.github.io/Blend-It/)
 
 ## Install
 1. Fork and clone down this repo.
