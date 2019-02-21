@@ -47,7 +47,7 @@ export default class SmoothieContainer extends Component {
             })
           }
           {showRecipe && 
-            <div className="smoothie-container" onClick={this.showRecipe}>
+            <div className="smoothie-container">
               <Smoothie 
                 showRecipe={this.showRecipe}
                 name={smoothieRecipe.name}
@@ -56,7 +56,7 @@ export default class SmoothieContainer extends Component {
                 id={smoothieRecipe.id}
               />
               <Recipe chosenRecipe={smoothieRecipe}/>
-              <h4 className="back-button"><i className="fas fa-chevron-circle-left"></i>Back to Results</h4>
+              <h4 className="back-button" onClick={this.showRecipe}><i className="fas fa-chevron-circle-left"></i>Back to Results</h4>
             </div>
           }
         </div>
