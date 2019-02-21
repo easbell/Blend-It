@@ -27,3 +27,6 @@ This was an opportunity to utilize the React framework, as well as, fetch API, t
 ![localhost_3000_ 1](https://user-images.githubusercontent.com/34728115/53129811-d4194a00-3525-11e9-9100-1f375cff9dcb.png)
 
 ![localhost_3000_](https://user-images.githubusercontent.com/34728115/53129726-961c2600-3525-11e9-9159-1782198e23cb.png)
+
+### Presentation
+View our app presentation: https://docs.google.com/presentation/d/1Lwe_dH9pG-NWe1zTIV4g2WPGcsnHtb9vsnCoAwc9K9M/edit?usp=sharing
