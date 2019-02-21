@@ -25,6 +25,9 @@ This was an opportunity to utilize the React framework, as well as, fetch API, t
 - SCSS
 - HTML
 
+#### Testing
+- Jest & Enzyme
+
 ### Screen Grabs
 ![localhost_3000_ 1](https://user-images.githubusercontent.com/34728115/53129811-d4194a00-3525-11e9-9100-1f375cff9dcb.png)
 
